@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Emilia Szczerba</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+    <div class="profile-pic">
+        <img src="assets/czarno .jpg" alt="Zdjęcie profilowe Emilii">
+    </div>
+    <div class="hero-text">
+        <h1>Cześć, jestem <span class="highlight">Emilia</span></h1>
+        <p>Łączę świat IT z grafiką komputerową i modelowaniem 3D.</p>
+    </div>
+</header>
+
+<nav class="navbar">
+    <button class="nav-btn active" onclick="showSection(event, 'about')">O mnie</button>
+    <button class="nav-btn" onclick="showSection(event, 'projects')">Projekty</button>
+    <button class="nav-btn" onclick="showSection(event, 'contact')">Kontakt</button>
+</nav>
+
+<link rel="stylesheet" href="css/style.css">
+
+<main>
+    <section id="about" class="content-section active">
+    </section>
+
+    <section id="projects" class="content-section">
+    </section>
+
+    <section id="contact" class="content-section">
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+        <p>2026, Emilia Szczerba</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" viewBox="0 0 1912 956" xmlns="http://www.w3.org/2000/svg">
+  <desc> Obrazek halloween </desc>
+  <title> Halloween </title>
+  <defs>
+    <linearGradient id="gradientN" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(15,1,48);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(69,41,255);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <defs>
+    <linearGradient id="gradientT" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(1,43,13);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(31,102,50);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <defs>
+    <radialGradient id="gradientO" cx="50%" cy="50%" r="55%">
+      <stop offset="3%" style="stop-color:rgb(245,221,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(174,88,2);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <defs>
+      <radialGradient id="gradientK" cx="50%" cy="50%" r="60%">
+          <stop offset="60%" style="stop-color:silver;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+      </radialGradient>
+  </defs>
+  <g id="tlo">
+    <rect width="100%" height="80%" fill="url(#gradientN)"/>
+    <rect width="100%" height="20%" x="0" y="764" fill="url(#gradientT)"/>
+  </g>
+  <g id="zamek">
+    <!--wierze-->
+    <rect width="90" height="150" x="491" y="614" fill="black"/>
+    <rect width="80" height="140" x="581" y="435" fill="black"/>
+    <rect width="180" height="190" x="571" y="574" fill="black"/>
+    <rect width="90" height="350" x="751" y="414" fill="black"/>
+    <rect width="120" height="500" x="841" y="264" fill="black"/>
+    <rect width="130" height="300" x="961" y="464" fill="black"/>
+    <rect width="90" height="150" x="980" y="314" fill="black"/>
+    <rect width="180" height="190" x="1061" y="574" fill="black"/>
+    <rect width="80" height="150" x="1151" y="425" fill="black"/>
+    <rect width="90" height="150" x="1241" y="614" fill="black"/>
+    <rect width="60" height="40" x="1070" y="335" fill="black"/>
+    <rect width="40" height="50" x="1090" y="285" fill="black"/>
+
+    <!--trojkaty-->
+    <polygon points="571,574 581,559 661,559 671,574" fill="black" />
+    <polygon points="1141,574 1151,559 1231,559 1241,574" fill="black" />
+    <rect width="100" height="20" x="571" y="495" fill="black"/>
+    <rect width="100" height="20" x="1141" y="490" fill="black"/>
+    <polygon points="1141,425 1191,305 1241,425" fill="black" />
+    <polygon points="571,435 621,315 671,435" fill="black" />
+    <rect width="100" height="10" x="571" y="425" fill="black"/>
+    <rect width="100" height="10" x="1141" y="415" fill="black"/>
+    <polygon points="741,414 806,270 871,414" fill="black" />
+    <polygon points="821,264 901,55 981,264" fill="black" />
+    <polygon points="970,314 1025,160 1080,314" fill="black" />
+    <polygon points="1085,285 1110,200 1135,285" fill="black" />
+    <rect width="100" height="10" x="741" y="404" fill="black"/>
+    <rect width="160" height="10" x="821" y="254" fill="black"/>
+    <rect width="110" height="10" x="970" y="304" fill="black"/>
+    <rect width="50" height="5" x="1085" y="280" fill="black"/>
+
+    <!--linie-->
+    <rect width="2" height="70" x="1190" y="265" fill="black"/>
+    <rect width="2" height="70" x="620" y="275" fill="black"/>
+    <rect width="2" height="70" x="805" y="225" fill="black"/>
+    <rect width="2" height="70" x="1024" y="120" fill="black"/>
+    <rect width="2" height="70" x="900" y="25" fill="black"/>
+
+    <!--okna, drzwi-->
+    <path d="M 606 490
+          L 606 450
+          A 30 70 0 0 1 636 450
+          L 636 490
+          Z" fill="rgb(38,38,38)">
+    <animate
+        attributeName="opacity"
+        values="0; 1; 1; 0"
+        keyTimes = "0; 0.1; 0.5; 1"
+        dur="5s"
+        begin="0s"
+        repeatCount="indefinite"
+    />
+  </path>
+
+    <path d="M 606 490
+        L 606 450
+        A 30 70 0 0 1 636 450
+        L 636 490
+        Z" fill="url(#gradientO)">
+    <animate
+          attributeName="opacity"
+          values="1; 0; 0; 1"
+          keyTimes="0; 0.1; 0.5; 1"
+          dur="5s"
+          begin="3s"
+          repeatCount="indefinite"
+        />
+    </path>
+<!--człowieczek-->
+    <path d="M 628 470
+        C 620 460, 635 460, 628 470
+        L 628 485
+        C 620 485, 635 485, 620 490
+        L 620 490
+        C 620 485, 635 495, 635 490
+        Z" fill="rgb(15,15,15)">
+        <animate
+            attributeName="opacity"
+            values="0; 1; 0; 0"
+            keyTimes="0; 0.1; 0.5; 1"
+            dur="10s"
+            begin="0s"
+            repeatCount="indefinite"
+        />
+    </path>
+
+    <path d="M 606 560
+          L 606 530
+          A 30 60 0 0 1 636 530
+          L 636 560
+          Z" fill="url(#gradientO)"/>
+
+    <rect width="4" height="200" x="619" y="420" fill="black"/>
+    <rect width="35" height="4" x="606" y="466" fill="black"/>
+    <rect width="35" height="4" x="606" y="542" fill="black"/>
+
+    <path d="M 1176 480
+          L 1176 440
+          A 30 70 0 0 1 1206 440
+          L 1206 480
+          Z" fill="url(#gradientO)"/>
+
+    <path d="M 1176 550
+          L 1176 520
+          A 30 60 0 0 1 1206 520
+          L 1206 550
+          Z" fill="url(#gradientO)"/>
+
+    <rect width="4" height="200" x="1189" y="420" fill="black"/>
+    <rect width="35" height="4" x="1176" y="456" fill="black"/>
+    <rect width="35" height="4" x="1176" y="532" fill="black"/>
+
+    <path d="M 1076 714
+          L 1076 651
+          A 60 120 0 0 1 1136 651
+          L 1136 714
+          Z" fill="url(#gradientO)" />
+
+    <rect width="6" height="100" x="1103" y="620" fill="black"/>
+
+    <path d="M 676 714
+          L 676 651
+          A 60 120 0 0 1 736 651
+          L 736 714
+          Z" fill="url(#gradientO)" />
+
+    <rect width="6" height="100" x="703" y="620" fill="black"/>
+    <rect width="500" height="6" x="676" y="676" fill="black"/>
+
+    <path d="M 826 764
+          L 826 626
+          A 160 300 0 0 1 986 626
+          L 986 764
+          Z" fill="rgb(28,28,28)" />
+    <rect width="6" height="214" x="903" y="550" fill="black"/>
+
+    <path d="M 776 480
+          L 776 440
+          A 40 100 0 0 1 816 440
+          L 816 480
+          Z" fill="url(#gradientO)"/>
+
+    <path d="M 776 565
+          L 776 525
+          A 40 100 0 0 1 816 525
+          L 816 565
+          Z" fill="url(#gradientO)"/>
+
+    <rect width="4" height="200" x="794" y="420" fill="black"/>
+    <rect width="55" height="4" x="776" y="454" fill="black"/>
+    <rect width="55" height="4" x="776" y="539" fill="black"/>
+
+    <path d="M 876 375
+          L 876 305
+          A 50 120 0 0 1 926 305
+          L 926 375
+          Z" fill="url(#gradientO)"/>
+
+    <rect width="4" height="100" x="899" y="280" fill="black"/>
+    <rect width="70" height="4" x="876" y="336" fill="black"/>
+
+    <path d="M 1005 385
+          L 1005 330
+          A 40 100 0 0 1 1045 330
+          L 1045 385
+          Z" fill="url(#gradientO)"/>
+
+    <path d="M 1005 560
+        L 1005 510
+        A 40 100 0 0 1 1045 510
+        L 1045 560
+        Z" fill="rgb(38,38,38)">
+        <animate
+            attributeName="opacity"
+            values="0; 1; 1; 0"
+            keyTimes="0; 0.1; 0.5; 1"
+            dur="5s"
+            begin="0s"
+            repeatCount="indefinite"
+        />
+    </path>
+
+    <path d="M 1005 560
+        L 1005 510
+        A 40 100 0 0 1 1045 510
+        L 1045 560
+        Z" fill="url(#gradientO)">
+        <animate
+            attributeName="opacity"
+            values="1; 0; 0; 1"
+            keyTimes="0; 0.1; 0.5; 1"
+            dur="5s"
+            begin="3s"
+            repeatCount="indefinite"
+        />
+    </path>
+
+    <path d="M 1015 540
+        C 1023 530, 1008 530, 1015 540
+        L 1015 555
+        C 1023 555, 1008 555, 1023 560
+        L 1023 560
+        C 1023 555, 1008 565, 1008 560
+        Z" fill="rgb(15,15,15)">
+        <animate
+            attributeName="opacity"
+            values="0; 0; 0; 1"
+            keyTimes="0; 0.1; 0.5; 1"
+            dur="10s"
+            begin="0s"
+            repeatCount="indefinite"
+        />
+    </path>
+
+    <rect width="4" height="350" x="1023" y="280" fill="black"/>
+    <rect width="60" height="4" x="1005" y="352" fill="black"/>
+    <rect width="60" height="4" x="1005" y="530" fill="black"/>
+
+    <path d="M 1103 320
+          L 1103 300
+          A 14 30 0 0 1 1117 300
+          L 1117 320
+          Z" fill="url(#gradientO)"/>
+
+    <path d="M 1103 360
+          L 1103 340
+          A 14 30 0 0 1 1117 340
+          L 1117 360
+          Z" fill="url(#gradientO)">
+    <animate
+        attributeName="opacity"
+        values="0.3; 1; 1; 0.3"
+        keyTimes = "0; 0.1; 0.5; 1"
+        dur="5s"
+        begin="0s"
+        repeatCount="indefinite"
+        />
+    </path>
+
+    <path d="M 1103 360
+        L 1103 340
+        A 14 30 0 0 1 1117 340
+        L 1117 360
+        Z" fill="rgb(38,38,38)">
+    <animate
+        attributeName="opacity"
+        values="1; 0.3; 0.3; 1"
+        keyTimes="0; 0.1; 0.5; 1"
+        dur="5s"
+        begin="3s"
+        repeatCount="indefinite"
+    />
+    </path>
+
+    <rect width="2" height="80" x="1109" y="280" fill="black"/>
+    <rect width="20" height="2" x="1103" y="308" fill="black"/>
+    <rect width="20" height="2" x="1103" y="348" fill="black"/>
+  </g>
+
+  <g id="dynie">
+      <!--prawa-->
+      <ellipse cx="1030" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1056" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1036" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1049" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1043" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="1000" cy="764" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1026" cy="764" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1006" cy="764" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1019" cy="764" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1013" cy="764" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="1090" cy="759" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1130" cy="759" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1100" cy="759" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1120" cy="759" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1110" cy="759" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="1070" cy="779" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1096" cy="779" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1076" cy="779" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1089" cy="779" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1083" cy="779" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="1023" cy="779" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1039" cy="779" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1027" cy="779" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1035" cy="779" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="1031" cy="779" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <!--lewa 1 5 2 4 3-->
+      <ellipse cx="755" cy="754" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="795" cy="754" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="765" cy="754" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="785" cy="754" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="775" cy="754" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="699" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="725" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="705" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="718" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="712" cy="754" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="685" cy="784" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="725" cy="784" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="695" cy="784" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="715" cy="784" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="705" cy="784" rx="20" ry="25" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="800" cy="774" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="826" cy="774" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="806" cy="774" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="819" cy="774" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="813" cy="774" rx="15" ry="20" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+
+      <ellipse cx="760" cy="784" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="776" cy="784" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="764" cy="784" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="772" cy="784" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+      <ellipse cx="768" cy="784" rx="8" ry="13" fill="rgb(196,95,0)" stroke="rgb(128,62,0)" stroke-width="1"/>
+  </g>
+
+  <g id="groby">
+      <path d="M 88 800
+            L 88 700
+            A 80 160 0 0 1 168 700
+            L 168 800
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="126" y="654" fill="black"/>
+      <rect width="18" height="4" x="119" y="661" fill="black"/>
+
+      <path d="M 278 790
+            L 278 690
+            A 80 160 0 0 1 358 690
+            L 358 790
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="226" y="674" fill="black"/>
+      <rect width="18" height="4" x="219" y="681" fill="black"/>
+
+      <path d="M 188 820
+            L 188 720
+            A 80 160 0 0 1 268 720
+            L 268 820
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="316" y="644" fill="black"/>
+      <rect width="18" height="4" x="309" y="651" fill="black"/>
+
+      <path d="M 118 910
+            L 118 810
+            A 80 160 0 0 1 198 810
+            L 198 910
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="156" y="764" fill="black"/>
+      <rect width="18" height="4" x="149" y="771" fill="black"/>
+
+      <path d="M 348 850
+            L 348 750
+            A 80 160 0 0 1 428 750
+            L 428 850
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="386" y="704" fill="black"/>
+      <rect width="18" height="4" x="379" y="711" fill="black"/>
+
+      <path d="M 258 890
+            L 258 790
+            A 80 160 0 0 1 338 790
+            L 338 890
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="296" y="744" fill="black"/>
+      <rect width="18" height="4" x="289" y="751" fill="black"/>
+
+      <path d="M 28 860
+            L 28 760
+            A 80 160 0 0 1 108 760
+            L 108 860
+            Z" fill="rgb(54,52,50)" stroke="rgb(41,40,39)" stroke-width="1"/>
+      <rect width="4" height="25" x="66" y="714" fill="black"/>
+      <rect width="18" height="4" x="59" y="721" fill="black"/>
+  </g>
+
+  <g id="księżyc">
+      <circle cx="1700" cy="190" r="100" fill="url(#gradientK)" />
+  </g>
+</svg>

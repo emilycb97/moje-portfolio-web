@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<!DOCTYPE kpopIdols SYSTEM "idols.dtd">
+
+<kpopIdols>
+
+    <metadata>
+        <author>Emilia Szczerba</author>
+        <modificationDate>2024-11-17</modificationDate>
+    </metadata>
+
+    <groups>
+        <group IDG="G01" numberOfMembers="8" dateOfDebut="25-03-2018">
+            <nameG>Stray Kids</nameG>
+            <difName>SKZ</difName>
+            <gender whatGender="boys"/>
+            <fandom>STAY</fandom>
+            <member IDRefM="I01 I02 I03 I04 I05 I06 I07 I08"/>
+            <inAgency IDRefA="A1"/>
+            <websiteG>https://straykids.jype.com</websiteG>
+            <instagramG>@realstraykids</instagramG>
+            <twitterX>@Stray_Kids</twitterX>
+            <tiktok>@jypestraykids</tiktok>
+            <youtube>https://www.youtube.com/@StrayKids</youtube>
+            <spotify>https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE?si=g8HfRS9XQkGqD8kzH_0oJw</spotify>
+        </group>
+
+        <group IDG="G02" numberOfMembers="5" dateOfDebut="04-03-2019">
+            <nameG>TOMORROW X TOGETHER</nameG>
+            <difName>TXT</difName>
+            <gender whatGender="boys"/>
+            <fandom>MOA</fandom>
+            <member IDRefM="I09 I10 I11 I12 I13"/>
+            <inAgency IDRefA="A2"/>
+            <websiteG>https://ibighit.com/txt/eng/</websiteG>
+            <instagramG>@txt_bighit</instagramG>
+            <twitterX>@TXT_bighit</twitterX>
+            <twitterX>@TXT_members</twitterX>
+            <tiktok>@txt.bighitent</tiktok>
+            <youtube>https://www.youtube.com/txt_bighit</youtube>
+            <spotify>https://open.spotify.com/artist/0ghlgldX5Dd6720Q3qFyQB?si=xIEYEasTQd6zzhntK2_Z7A</spotify>
+        </group>
+
+        <group IDG="G03" numberOfMembers="7" dateOfDebut="13-06-2013">
+            <nameG>BTS</nameG>
+            <difName>Bangtan Boys</difName>
+            <gender whatGender="boys"/>
+            <fandom>A.R.M.Y</fandom>
+            <member IDRefM="I14 I15 I16 I17 I18 I19 I20"/>
+            <inAgency IDRefA="A2"/>
+            <websiteG>https://ibighit.com/bts/eng/</websiteG>
+            <instagramG>@bts.bighitofficial</instagramG>
+            <twitterX>@bts_twt</twitterX>
+            <tiktok>@bts_official_bighit</tiktok>
+            <youtube>https://www.youtube.com/channel/UCLkAepWjdylmXSltofFvsYQ</youtube>
+            <spotify>https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX?si=0EaNnek3QZSfa3hZB_csMA</spotify>
+        </group>
+
+        <group IDG="G04" numberOfMembers="4" dateOfDebut="17-11-2020">
+            <nameG>aespa</nameG>
+            <gender whatGender="girls"/>
+            <fandom>MY</fandom>
+            <member IDRefM="I21 I22 I23 I24"/>
+            <inAgency IDRefA="A3"/>
+            <websiteG>https://www.aespa.com</websiteG>
+            <instagramG>@aespa_official</instagramG>
+            <twitterX>@aespa_official</twitterX>
+            <tiktok>@aespa_official</tiktok>
+            <youtube>https://www.youtube.com/c/aespa</youtube>
+            <spotify>https://open.spotify.com/artist/6YVMFz59CuY7ngCxTxjpxE?si=ymdymfAnQpyfiizfv8iDEg</spotify>
+        </group>
+
+        <group IDG="G05" numberOfMembers="4" dateOfDebut="19-06-2017">
+            <nameG>KARD</nameG>
+            <difName>K.A.R.D</difName>
+            <gender whatGender="mixed"/>
+            <fandom>Hidden Kard</fandom>
+            <member IDRefM="I25 I26 I27 I28"/>
+            <inAgency IDRefA="A4"/>
+            <websiteG>https://www.kard.kr</websiteG>
+            <instagramG>@official_kard</instagramG>
+            <twitterX>@KARD_Official</twitterX>
+            <tiktok>@official.kard</tiktok>
+            <youtube>https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw</youtube>
+            <spotify>https://open.spotify.com/artist/2JhAlkmukNvarUpGhTFXUQ?si=Lw7XPY7eQ-ak2CuH4IiZUQ</spotify>
+        </group>
+
+    </groups>
+
+    <idols>
+        <idol IDI="I01" dateOfBirth="03-10-1997">
+            <stageName>Bang Chan</stageName>
+            <nameI>Christopher</nameI>
+            <nameI>Chahn</nameI>
+            <surname>Bahng</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P1 P2 P3 P4 P5"/>
+            <height unit="cm">172</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>ENFJ</mbti>
+            <nationality>Australian</nationality>
+            <nationality>South Korean</nationality>
+            <instagram>@gnabnahc</instagram>
+        </idol>
+
+        <idol IDI="I02" dateOfBirth="25-10-1998">
+            <stageName>Lee Know</stageName>
+            <nameI>Minho</nameI>
+            <surname>Lee</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">172</height>
+            <zodiacSign>Scorpio</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@t.leeknowsaurus</instagram>
+        </idol>
+
+        <idol IDI="I03" dateOfBirth="11-08-1999">
+            <stageName>Changbin</stageName>
+            <nameI>Changbin</nameI>
+            <surname>Seo</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P2 P3 P4"/>
+            <height unit="cm">167</height>
+            <zodiacSign>Leo</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@jutdwae</instagram>
+        </idol>
+
+        <idol IDI="I04" dateOfBirth="20-03-2000">
+            <stageName>Hyunjin</stageName>
+            <nameI>Hyunjin</nameI>
+            <surname>Hwang</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P2 P4 P5 P6"/>
+            <height unit="cm">179</height>
+            <zodiacSign>Pisces</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@hynjinnnn</instagram>
+        </idol>
+
+        <idol IDI="I05" dateOfBirth="14-09-2000">
+            <stageName>Han</stageName>
+            <nameI>Jisung</nameI>
+            <surname>Han</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P2 P3 P4"/>
+            <height unit="cm">169</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ISTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@_doolsetnet</instagram>
+        </idol>
+
+        <idol IDI="I06" dateOfBirth="15-09-2000">
+            <stageName>Felix</stageName>
+            <nameI>Felix</nameI>
+            <nameI>Yongbok</nameI>
+            <surname>Lee</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">171</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ENFJ</mbti>
+            <nationality>South Korean</nationality>
+            <nationality>Australian</nationality>
+            <instagram>@yong.lixx</instagram>
+        </idol>
+
+        <idol IDI="I07" dateOfBirth="22-09-2000">
+            <stageName>Seungmin</stageName>
+            <nameI>Seungmin</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P4"/>
+            <height unit="cm">178</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ISFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@miniverse.__</instagram>
+        </idol>
+
+        <idol IDI="I08" dateOfBirth="08-02-2001">
+            <stageName>I.N</stageName>
+            <nameI>Jeongin</nameI>
+            <surname>Yang</surname>
+            <inGroup IDRefG="G01"/>
+            <whatPosition IDRefP="P4"/>
+            <height unit="cm">172</height>
+            <zodiacSign>Aquarius</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@i.2.n.8</instagram>
+        </idol>
+
+        <idol IDI="I09" dateOfBirth="05-12-2000">
+            <stageName>Soobin</stageName>
+            <nameI>Soobin</nameI>
+            <surname>Choi</surname>
+            <inGroup IDRefG="G02"/>
+            <whatPosition IDRefP="P1"/>
+            <height unit="cm">185</height>
+            <zodiacSign>Sagittarius</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@page.soobin</instagram>
+        </idol>
+
+        <idol IDI="I10" dateOfBirth="13-09-1999">
+            <stageName>Yeonjun</stageName>
+            <nameI>Yeonjun</nameI>
+            <surname>Choi</surname>
+            <inGroup IDRefG="G02"/>
+            <whatPosition IDRefP="P2 P5 P6"/>
+            <height unit="cm">182</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ENFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@yawnzzn</instagram>
+        </idol>
+
+        <idol IDI="I11" dateOfBirth="13-03-2001">
+            <stageName>Beomgyu</stageName>
+            <nameI>Beomgyu</nameI>
+            <surname>Choi</surname>
+            <inGroup IDRefG="G02"/>
+            <whatPosition IDRefP="P6"/>
+            <height unit="cm">180</height>
+            <zodiacSign>Pisces</zodiacSign>
+            <mbti>ISFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@bamgyuuuu</instagram>
+        </idol>
+
+        <idol IDI="I12" dateOfBirth="05-02-2002">
+            <stageName>Taehyun</stageName>
+            <nameI>Taehyun</nameI>
+            <surname>Kang</surname>
+            <inGroup IDRefG="G02"/>
+            <whatPosition IDRefP="P4"/>
+            <height unit="cm">177</height>
+            <zodiacSign>Aquarius</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+        </idol>
+
+        <idol IDI="I13" dateOfBirth="14-08-2002">
+            <stageName>Huening Kai</stageName>
+            <nameI>Kai</nameI>
+            <nameI>Kamal</nameI>
+            <surname>Huening</surname>
+            <inGroup IDRefG="G02"/>
+            <whatPosition IDRefP="P4"/>
+            <height unit="cm">183</height>
+            <zodiacSign>Leo</zodiacSign>
+            <mbti>ISTP</mbti>
+            <nationality>South Korean</nationality>
+            <nationality>American</nationality>
+        </idol>
+
+        <idol IDI="I14" dateOfBirth="12-09-1994">
+            <stageName>RM</stageName>
+            <nameI>Namjoon</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P1 P2"/>
+            <height unit="cm">181</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ENTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@rkive</instagram>
+            <instagram>@rpwprpwprpwp</instagram>
+        </idol>
+
+        <idol IDI="I15" dateOfBirth="04-12-1992">
+            <stageName>Jin</stageName>
+            <nameI>Seokjin</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P4 P6"/>
+            <height unit="cm">179</height>
+            <zodiacSign>Sagittarius</zodiacSign>
+            <mbti>INTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@jin</instagram>
+        </idol>
+
+        <idol IDI="I16" dateOfBirth="09-03-1993">
+            <stageName>Suga</stageName>
+            <nameI>Yoongi</nameI>
+            <surname>Min</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P2"/>
+            <height unit="cm">174</height>
+            <zodiacSign>Pisces</zodiacSign>
+            <mbti>ISTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@agustd</instagram>
+        </idol>
+
+        <idol IDI="I17" dateOfBirth="18-02-1994">
+            <stageName>J-Hope</stageName>
+            <nameI>Hoseok</nameI>
+            <surname>Jung</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">177</height>
+            <zodiacSign>Aquarius</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@uarmyhope</instagram>
+        </idol>
+
+        <idol IDI="I18" dateOfBirth="13-10-1995">
+            <stageName>Jimin</stageName>
+            <nameI>Jimin</nameI>
+            <surname>Park</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P4 P5"/>
+            <height unit="cm">174</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@j.m</instagram>
+        </idol>
+
+        <idol IDI="I19" dateOfBirth="30-12-1995">
+            <stageName>V</stageName>
+            <nameI>Taehyung</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P4 P6"/>
+            <height unit="cm">179</height>
+            <zodiacSign>Capricorn</zodiacSign>
+            <mbti>INFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@thv</instagram>
+        </idol>
+
+        <idol IDI="I20" dateOfBirth="01-09-1997">
+            <stageName>Jungkook</stageName>
+            <nameI>Jungkook</nameI>
+            <surname>Jeon</surname>
+            <inGroup IDRefG="G03"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">177</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>INTP</mbti>
+            <nationality>South Korean</nationality>
+        </idol>
+
+        <idol IDI="I21" dateOfBirth="11-04-2000">
+            <stageName>Karina</stageName>
+            <nameI>Jimin</nameI>
+            <surname>Yu</surname>
+            <inGroup IDRefG="G04"/>
+            <whatPosition IDRefP="P1 P2 P4 P5 P6"/>
+            <height unit="cm">168</height>
+            <zodiacSign>Aries</zodiacSign>
+            <mbti>ENFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@katarinabluu</instagram>
+        </idol>
+
+        <idol IDI="I22" dateOfBirth="30-10-2000">
+            <stageName>Giselle</stageName>
+            <nameI>Aeri</nameI>
+            <surname>Kim</surname>
+            <surname>Uchinaga</surname>
+            <inGroup IDRefG="G04"/>
+            <whatPosition IDRefP="P2 P4"/>
+            <height unit="cm">164</height>
+            <zodiacSign>Scorpio</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <nationality>Japanese</nationality>
+            <instagram>@aerichandesu</instagram>
+        </idol>
+
+        <idol IDI="I23" dateOfBirth="01-01-2001">
+            <stageName>Winter</stageName>
+            <nameI>Minjeong</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G04"/>
+            <whatPosition IDRefP="P4 P5 P6"/>
+            <height unit="cm">165</height>
+            <zodiacSign>Capricorn</zodiacSign>
+            <mbti>INTJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@imwinter</instagram>
+        </idol>
+
+        <idol IDI="I24" dateOfBirth="23-10-2002">
+            <stageName>NingNing</stageName>
+            <nameI>Yizhuo</nameI>
+            <nameI>Yetak</nameI>
+            <surname>Ning</surname>
+            <surname>Jeo</surname>
+            <inGroup IDRefG="G04"/>
+            <whatPosition IDRefP="P4"/>
+            <height unit="cm">161</height>
+            <zodiacSign>Scorpio</zodiacSign>
+            <mbti>INFP</mbti>
+            <nationality>Chinese</nationality>
+            <instagram>@imnotningning</instagram>
+        </idol>
+
+        <idol IDI="I25" dateOfBirth="21-06-1992">
+            <stageName>J.Seph</stageName>
+            <nameI>Taehyung</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G05"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">179</height>
+            <zodiacSign>Cancer</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@j.seph_</instagram>
+        </idol>
+
+        <idol IDI="I26" dateOfBirth="20-10-1992">
+            <stageName>BM</stageName>
+            <nameI>Matthew</nameI>
+            <nameI>Jiseok</nameI>
+            <surname>Kim</surname>
+            <inGroup IDRefG="G05"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">186</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>ESFJ</mbti>
+            <nationality>South Korean</nationality>
+            <nationality>American</nationality>
+            <instagram>@bigmatthewww</instagram>
+        </idol>
+
+        <idol IDI="I27" dateOfBirth="22-08-1996">
+            <stageName>Somin</stageName>
+            <nameI>Somin</nameI>
+            <surname>Jeon</surname>
+            <inGroup IDRefG="G05"/>
+            <whatPosition IDRefP="P4 P6"/>
+            <height unit="cm">163</height>
+            <zodiacSign>Leo</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@somin_jeon0822</instagram>
+        </idol>
+
+        <idol IDI="I28" dateOfBirth="04-10-1996">
+            <stageName>Jiwoo</stageName>
+            <nameI>Jiwoo</nameI>
+            <surname>Jeon</surname>
+            <inGroup IDRefG="G05"/>
+            <whatPosition IDRefP="P2 P4 P5"/>
+            <height unit="cm">165</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@_zziwooo0</instagram>
+        </idol>
+
+    </idols>
+
+    <agencies>
+        <agency IDA="A1" yearOfFounding="1997">
+            <nameA>JYP Entertainment</nameA>
+            <address>
+                <street>205 Gangdong daero</street>
+                <district>Gangdong-gu</district>
+                <city>Seoul</city>
+                <country>South Korea</country>
+            </address>
+            <founder>J.Y.Park</founder>
+            <phoneNumber>02-2225-8100</phoneNumber>
+            <email>publishing@jype.com</email>
+            <websiteA>https://www.jype.com</websiteA>
+            <revenue currency="USD" unit="millions">494.78</revenue>
+            <revenue currency="KRW" unit="billions">566</revenue>
+        </agency>
+
+        <agency IDA="A2" yearOfFounding="2005">
+            <nameA>Big Hit Music</nameA>
+            <address>
+                <street>42 Hangang-daero</street>
+                <district>Yongsan-gu</district>
+                <city>Seoul</city>
+                <country>South Korea</country>
+            </address>
+            <founder>Bang Sihyuk</founder>
+            <phoneNumber>02-3444-0105</phoneNumber>
+            <email>bighit@ibighit.com</email>
+            <email>community@bighitcorp.com</email>
+            <websiteA>https://ibighit.com</websiteA>
+            <revenue currency="USD" unit="billions">1.84</revenue>
+            <revenue currency="KRW" unit="trillions">2.1</revenue>
+        </agency>
+
+        <agency IDA="A3" yearOfFounding="1995">
+            <nameA>SM Entertainment</nameA>
+            <address>
+                <street>83-21 Wangsimni-ro</street>
+                <district>Seongdong-gu</district>
+                <city>Seoul</city>
+                <country>South Korea</country>
+            </address>
+            <founder>Lee Sooman</founder>
+            <phoneNumber>02-6240-9800</phoneNumber>
+            <email>privacy@smtown.com</email>
+            <websiteA>https://www.smentertainment.com</websiteA>
+            <revenue currency="USD" unit="millions">657</revenue>
+        </agency>
+
+        <agency IDA="A4" yearOfFounding="1991">
+            <nameA>DSP Media</nameA>
+            <address>
+                <street>129 Jayang-ro</street>
+                <district>Gwangjin-gu</district>
+                <city>Seoul</city>
+                <country>South Korea</country>
+            </address>
+            <founder>Lee Hoyeon</founder>
+            <phoneNumber>02-532-9945</phoneNumber>
+            <email>dsp001@dspmedia.co.kr</email>
+            <websiteA>http://dspmedia.co.kr</websiteA>
+            <revenue currency="USD" unit="millions">16.9</revenue>
+            <revenue currency="KRW" unit="billions">23.6</revenue>
+        </agency>
+
+    </agencies>
+
+    <positions>
+        <position IDP="P1">leader</position>
+        <position IDP="P2">rapper</position>
+        <position IDP="P3">producer</position>
+        <position IDP="P4">vocalist</position>
+        <position IDP="P5">dancer</position>
+        <position IDP="P6">visual</position>
+    </positions>
+
+</kpopIdols>

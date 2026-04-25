@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><svg:svg width="800" height="500" viewBox="0 0 800 500" onload="initChart()" xmlns:svg="http://www.w3.org/2000/svg">
+    <svg:defs>
+        <svg:linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <svg:stop offset="0%" style="stop-color:rgb(240, 255, 240);stop-opacity:1"/>
+            <svg:stop offset="100%" style="stop-color:rgb(220, 255, 220);stop-opacity:1"/>
+        </svg:linearGradient>
+        <svg:linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <svg:stop offset="0%" style="stop-color:#A8E6A3;stop-opacity:1">
+                <svg:animate attributeName="stop-color" values="#A8E6A3;#7BC47F;#A8E6A3" dur="3s" repeatCount="indefinite"/>
+            </svg:stop>
+            <svg:stop offset="100%" style="stop-color:#7BC47F;stop-opacity:1">
+                <svg:animate attributeName="stop-color" values="#7BC47F;#4CAF50;#7BC47F" dur="3s" repeatCount="indefinite"/>
+            </svg:stop>
+        </svg:linearGradient>
+    </svg:defs>
+    <svg:rect width="100%" height="100%" fill="url(#backgroundGradient)">
+        <svg:animate attributeName="opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite"/>
+    </svg:rect>
+    <svg:text x="400" y="40" font-size="20" text-anchor="middle" font-family="Arial" font-weight="bold" fill="#333">
+                        Distribution of K-pop Idols by Zodiac Sign
+                
+        <svg:animate attributeName="font-size" values="20;22;20" dur="2s" repeatCount="indefinite"/>
+    </svg:text>
+    <svg:g id="axes">
+        <svg:line x1="80" y1="400" x2="720" y2="400" stroke="#333" stroke-width="2">
+            <svg:animate attributeName="x2" from="80" to="720" dur="1s" fill="freeze"/>
+        </svg:line>
+        <svg:line x1="80" y1="400" x2="80" y2="80" stroke="#333" stroke-width="2">
+            <svg:animate attributeName="y2" from="400" to="80" dur="1s" fill="freeze"/>
+        </svg:line>
+    </svg:g>
+    <svg:g id="y-labels">
+        <svg:text x="70" y="350" text-anchor="end" font-family="Arial" font-size="12" opacity="0">
+            0
+            <svg:animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/>
+        </svg:text>
+        <svg:text x="70" y="300" text-anchor="end" font-family="Arial" font-size="12" opacity="0">
+            2
+            <svg:animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.2s" fill="freeze"/>
+        </svg:text>
+        <svg:text x="70" y="250" text-anchor="end" font-family="Arial" font-size="12" opacity="0">
+            4
+            <svg:animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.30000000000000004s" fill="freeze"/>
+        </svg:text>
+        <svg:text x="70" y="200" text-anchor="end" font-family="Arial" font-size="12" opacity="0">
+            6
+            <svg:animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.4s" fill="freeze"/>
+        </svg:text>
+        <svg:text x="70" y="150" text-anchor="end" font-family="Arial" font-size="12" opacity="0">
+            8
+            <svg:animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.5s" fill="freeze"/>
+        </svg:text>
+        <svg:text x="70" y="100" text-anchor="end" font-family="Arial" font-size="12" opacity="0">
+            10
+            <svg:animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.6000000000000001s" fill="freeze"/>
+        </svg:text>
+    </svg:g>
+    <svg:g id="bars">
+        <svg:g id="bar-Aquarius" transform="translate(80, 400)" onmouseover="highlightBar('Aquarius')" onmouseout="unhighlightBar('Aquarius')" onclick="showDetails('Aquarius', 3)">
+            <svg:rect x="0" y="-75" width="40" height="75" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="75" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-75" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-85" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">3</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Aquarius</svg:text>
+        </svg:g>
+        <svg:g id="bar-Aries" transform="translate(145, 400)" onmouseover="highlightBar('Aries')" onmouseout="unhighlightBar('Aries')" onclick="showDetails('Aries', 1)">
+            <svg:rect x="0" y="-25" width="40" height="25" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="25" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-25" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-35" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">1</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Aries</svg:text>
+        </svg:g>
+        <svg:g id="bar-Cancer" transform="translate(210, 400)" onmouseover="highlightBar('Cancer')" onmouseout="unhighlightBar('Cancer')" onclick="showDetails('Cancer', 1)">
+            <svg:rect x="0" y="-25" width="40" height="25" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="25" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-25" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-35" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">1</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Cancer</svg:text>
+        </svg:g>
+        <svg:g id="bar-Capricorn" transform="translate(275, 400)" onmouseover="highlightBar('Capricorn')" onmouseout="unhighlightBar('Capricorn')" onclick="showDetails('Capricorn', 2)">
+            <svg:rect x="0" y="-50" width="40" height="50" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="50" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-50" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-60" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">2</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Capricorn</svg:text>
+        </svg:g>
+        <svg:g id="bar-Leo" transform="translate(340, 400)" onmouseover="highlightBar('Leo')" onmouseout="unhighlightBar('Leo')" onclick="showDetails('Leo', 3)">
+            <svg:rect x="0" y="-75" width="40" height="75" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="75" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-75" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-85" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">3</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Leo</svg:text>
+        </svg:g>
+        <svg:g id="bar-Libra" transform="translate(405, 400)" onmouseover="highlightBar('Libra')" onmouseout="unhighlightBar('Libra')" onclick="showDetails('Libra', 4)">
+            <svg:rect x="0" y="-100" width="40" height="100" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="100" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-100" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-110" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">4</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Libra</svg:text>
+        </svg:g>
+        <svg:g id="bar-Pisces" transform="translate(470, 400)" onmouseover="highlightBar('Pisces')" onmouseout="unhighlightBar('Pisces')" onclick="showDetails('Pisces', 3)">
+            <svg:rect x="0" y="-75" width="40" height="75" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="75" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-75" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-85" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">3</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Pisces</svg:text>
+        </svg:g>
+        <svg:g id="bar-Sagittarius" transform="translate(535, 400)" onmouseover="highlightBar('Sagittarius')" onmouseout="unhighlightBar('Sagittarius')" onclick="showDetails('Sagittarius', 2)">
+            <svg:rect x="0" y="-50" width="40" height="50" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="50" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-50" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-60" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">2</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Sagittarius</svg:text>
+        </svg:g>
+        <svg:g id="bar-Scorpio" transform="translate(600, 400)" onmouseover="highlightBar('Scorpio')" onmouseout="unhighlightBar('Scorpio')" onclick="showDetails('Scorpio', 3)">
+            <svg:rect x="0" y="-75" width="40" height="75" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="75" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-75" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-85" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">3</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Scorpio</svg:text>
+        </svg:g>
+        <svg:g id="bar-Virgo" transform="translate(665, 400)" onmouseover="highlightBar('Virgo')" onmouseout="unhighlightBar('Virgo')" onclick="showDetails('Virgo', 6)">
+            <svg:rect x="0" y="-150" width="40" height="150" fill="url(#barGradient)" opacity="0.8" rx="5" ry="5">
+                <svg:animate attributeName="height" from="0" to="150" dur="1s" fill="freeze"/>
+                <svg:animate attributeName="y" from="0" to="-150" dur="1s" fill="freeze"/>
+            </svg:rect>
+            <svg:text x="20" y="-160" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">6</svg:text>
+            <svg:text x="20" y="20" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45, 20, 20)">Virgo</svg:text>
+        </svg:g>
+    </svg:g>
+    <svg:g id="details-panel" transform="translate(300, 200)" style="display: none">
+        <svg:rect x="0" y="0" width="150" height="80" fill="white" stroke="#333" rx="10"/>
+        <svg:text id="details-text" x="75" y="40" text-anchor="middle"/>
+    </svg:g>
+    <svg:text x="400" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">
+                Zodiac Signs
+            </svg:text>
+    <svg:text x="40" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, 40, 250)">
+                Number of Idols
+            </svg:text>
+    <svg:script type="text/javascript">
+                
+                function initChart() {
+                    // Initialize any needed variables
+                    window.currentHighlight = null;
+                }
+
+                function highlightBar(sign) {
+                    const bar = document.getElementById('bar-' + sign);
+                    const rect = bar.getElementsByTagName('rect')[0];
+                    rect.setAttribute('opacity', '1');
+                    rect.setAttribute('filter', 'brightness(1.2)');
+                }
+
+                function unhighlightBar(sign) {
+                    const bar = document.getElementById('bar-' + sign);
+                    const rect = bar.getElementsByTagName('rect')[0];
+                    rect.setAttribute('opacity', '0.8');
+                    rect.setAttribute('filter', 'none');
+                }
+
+                function showDetails(sign, count) {
+                    const panel = document.getElementById('details-panel');
+                    const text = document.getElementById('details-text');
+                    text.textContent = `${sign}: ${count} idols`;
+                    panel.style.display = 'block';
+
+                    // Animate panel appearance
+                    panel.setAttribute('opacity', '0');
+                    panel.animate([
+                        { opacity: 0 },
+                        { opacity: 1 }
+                    ], {
+                        duration: 300,
+                        fill: 'forwards'
+                    });
+                }
+                
+            </svg:script>
+</svg:svg>

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+
+
+kpopIdols {
+    background-image: linear-gradient(#e0fff6, #7fb0a2);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arima', sans-serif;
+}
+
+idols:before {
+    content: "~ Kpop Idols ~";
+    display: block;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 1em;
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+idols {
+    order: 1;
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1em;
+    padding: 1em;
+    list-style-type: decimal;
+    counter-reset: idolCounter;
+}
+
+idol {
+    display: list-item;
+    list-style-position: inside;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #fff;
+    transition: transform 0.2s;
+    counter-increment: idolCounter;
+    position: relative;
+}
+
+idol::marker {
+    font-size: 2em;
+    font-weight: bold;
+    color: #01825b;
+    margin-right: 0.5em;
+}
+
+idol:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+idol stageName {
+    font-size: 2em;
+    font-weight: bold;
+    color: #03a675;
+    text-align: center;
+}
+
+idol height:before{
+    content: "Height: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+idol height{
+    display: block;
+}
+
+idol height:after{
+    content: " " attr(unit);
+}
+
+idol zodiacSign:before{
+    content: "Zodiac sign: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+idol zodiacSign{
+    display: block;
+}
+
+idol mbti:before{
+    content: "MBTI: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+idol mbti{
+    display: block;
+}
+
+idol nationality:before {
+     content: "Nationality: ";
+     font-weight: bold;
+     color: #34495e;
+}
+
+idol nationality {
+    display: block;
+    font-style: italic;
+    color: #34495e;
+}
+
+idol instagram:before{
+    content: "Instagram: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+idol instagram{
+    display: block;
+}
+
+groups:before {
+    content: "Groups";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+groups {
+    order: 48;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+group {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+group:nth-child(odd) {
+    background-color: #98fadb;
+}
+
+group:nth-child(even) {
+    background-color: #69ffc0;
+}
+
+nameG {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #2c3e50;
+}
+
+difName {
+    font-size: 0.9em;
+    color: #2c3e50;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0.5em;
+}
+
+difName:before {
+    content: "(";
+}
+
+difName:after {
+    content: ")";
+}
+
+group gender:before{
+    content: "Type of group (gender): ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group gender:after{
+    content: attr(whatGender);
+}
+
+group:after {
+    content: "Number of members: " attr(numberOfMembers) "\A" "Date of debut: " attr(dateOfDebut);
+    white-space: pre;
+    display: block;
+    font-weight: bold;
+    color: #34495e;
+}
+
+group fandom:before{
+    content: "Fandom name: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group websiteG{
+    margin-top: 1em;
+}
+
+group websiteG:before{
+    content: "Website: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group instagramG:before{
+    content: "Instagram: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group twitterX:before{
+    content: "Twitter / X: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group tiktok:before{
+    content: "Tiktok: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group youtube:before{
+    content: "Youtube: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group spotify:before{
+    content: "Spotify: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+group youtube,
+group spotify {
+    display: block;
+    margin-top: 1em;
+    font-size: 1em;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+agencies:before {
+    content: "Agencies";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 1em;
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+agencies {
+    order: 60;
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+agency {
+    border: 1px solid #bbb;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #ace3d3;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+agency:hover {
+    transform: scale(1.03);
+}
+
+agency nameA {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #21403a;
+    text-align: center;
+}
+
+agency:after{
+    content: "Year of Founding: " attr(yearOfFounding);
+    display: block;
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency address:before {
+    content: "Address: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency address street:before,
+agency address district:before,
+agency address city:before,
+agency address country:before {
+    content: attr(tagName);
+}
+
+agency address street:after,
+agency address district:after,
+agency address city:after {
+    content: ", ";
+}
+
+agency founder:before {
+    content: "Founder: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency phoneNumber:before {
+    content: "Phone Number: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency email:before {
+    content: "Email: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency websiteA:before {
+    content: "Website: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency revenue:before {
+    content: "Revenue: ";
+    font-weight: bold;
+    color: #34495e;
+}
+
+agency revenue[currency="USD"]:after {
+    content: " " attr(unit) " (in USD)";
+    font-style: italic;
+    color: #34495e;
+}
+
+agency revenue[currency="KRW"]:after {
+    content: " " attr(unit) " (in KRW)";
+    font-style: italic;
+    color: #34495e;
+}
+
+agency revenue[currency="EUR"]:after {
+    content: " " attr(unit) " (in EUR)";
+    font-style: italic;
+    color: #34495e;
+}
+
+revenue[currency="USD"] {
+    background-color: #ebfaf8; /* Jasnoniebieskie tło */
+    font-weight: bold;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+revenue[currency="KRW"] {
+    background-color: #ccfff8; /* Jasnożółte tło */
+    font-weight: bold;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+revenue[currency="EUR"] {
+    background-color: #afdbd5; /* Jasnozielone tło */
+    font-weight: bold;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+
+positions{
+    order:80;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+positions:before {
+    content: "Positions";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+position:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+}
+
+position {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #04d1bd;
+    border: 1px solid #05695f;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #05695f;
+    flex: 1 1 auto;
+    transition: transform 0.2s;
+}
+
+metadata {
+    order: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 1em;
+    background-color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #34495e;
+}
+
+author:before {
+    content: "Autor: ";
+    font-weight: bold;
+}
+
+modificationDate:before {
+    content: "Ostatnia data modyfikacji: ";
+    font-weight: bold;
+}
+
+author, modificationDate {
+    display: block;
+    margin-bottom: 1em;
+}
+

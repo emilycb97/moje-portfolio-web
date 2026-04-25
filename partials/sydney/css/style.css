@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1 {
+    color: #355D45;
+    font-family: "Meddon", cursive;
+    font-style: normal;
+    font-size: 328%;
+    justify-content: center;
+    text-align: center;
+  }
+
+h2 {
+    color: #355D45;
+    text-align: center;
+    font-size: 180%;
+}
+
+p {
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+    margin: 20px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    margin: 20px 50px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+li{
+    font-size: 15px;
+}
+
+li::before{
+    content: "✧";
+    font-size: 1em;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #355D45;
+    margin: 20px 0;
+}
+
+table, th, td{
+    border-style: inset;
+    border-color: #355D45;
+}
+
+table{
+    width: 88%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    width: 25%;
+}
+
+
+
+.full-width-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.bold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.list{
+        font-weight: bold;
+        font-style: italic;
+        color: #355D45;
+        font-family: "Arima", system-ui;
+        font-optical-sizing: auto;
+        font-size: 18px;
+}
+
+.facts{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    color: #355D45;
+    font-family: "Meddon", cursive;
+}
+
+.padding{
+    margin: 1px 20px;
+}
+
+.con_facts{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.side{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side iframe {
+    border: none;
+    width: 70%;
+    align-items: center;
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.table{
+    padding: 5px 100px;
+}

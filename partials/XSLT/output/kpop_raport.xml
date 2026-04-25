@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?><report>
+    <idols>
+        <idol>
+            <stageName>Bang Chan</stageName>
+            <name>Christopher</name>
+            <name>Chahn</name>
+            <surname>Bahng</surname>
+            <dateOfBirth>03-10-1997</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">172</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>ENFJ</mbti>
+            <nationality>Australian</nationality>
+            <nationality>South Korean</nationality>
+            <instagram>@gnabnahc</instagram>
+        </idol>
+        <idol>
+            <stageName>Lee Know</stageName>
+            <name>Minho</name>
+            <surname>Lee</surname>
+            <dateOfBirth>25-10-1998</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">172</height>
+            <zodiacSign>Scorpio</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@t.leeknowsaurus</instagram>
+        </idol>
+        <idol>
+            <stageName>Changbin</stageName>
+            <name>Changbin</name>
+            <surname>Seo</surname>
+            <dateOfBirth>11-08-1999</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">167</height>
+            <zodiacSign>Leo</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@jutdwae</instagram>
+        </idol>
+        <idol>
+            <stageName>Hyunjin</stageName>
+            <name>Hyunjin</name>
+            <surname>Hwang</surname>
+            <dateOfBirth>20-03-2000</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">179</height>
+            <zodiacSign>Pisces</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@hynjinnnn</instagram>
+        </idol>
+        <idol>
+            <stageName>Han</stageName>
+            <name>Jisung</name>
+            <surname>Han</surname>
+            <dateOfBirth>14-09-2000</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">169</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ISTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@_doolsetnet</instagram>
+        </idol>
+        <idol>
+            <stageName>Felix</stageName>
+            <name>Felix</name>
+            <name>Yongbok</name>
+            <surname>Lee</surname>
+            <dateOfBirth>15-09-2000</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">171</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ENFJ</mbti>
+            <nationality>Australian</nationality>
+            <nationality>South Korean</nationality>
+            <instagram>@yong.lixx</instagram>
+        </idol>
+        <idol>
+            <stageName>Seungmin</stageName>
+            <name>Seungmin</name>
+            <surname>Kim</surname>
+            <dateOfBirth>22-09-2000</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">178</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ISFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@miniverse.__</instagram>
+        </idol>
+        <idol>
+            <stageName>I.N</stageName>
+            <name>Jeongin</name>
+            <surname>Yang</surname>
+            <dateOfBirth>08-02-2001</dateOfBirth>
+            <group>Stray Kids</group>
+            <height unit="cm">172</height>
+            <zodiacSign>Aquarius</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@i.2.n.8</instagram>
+        </idol>
+        <idol>
+            <stageName>Soobin</stageName>
+            <name>Soobin</name>
+            <surname>Choi</surname>
+            <dateOfBirth>05-12-2000</dateOfBirth>
+            <group>TOMORROW X TOGETHER</group>
+            <height unit="cm">185</height>
+            <zodiacSign>Sagittarius</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@page.soobin</instagram>
+        </idol>
+        <idol>
+            <stageName>Yeonjun</stageName>
+            <name>Yeonjun</name>
+            <surname>Choi</surname>
+            <dateOfBirth>13-09-1999</dateOfBirth>
+            <group>TOMORROW X TOGETHER</group>
+            <height unit="cm">182</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ENFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@yawnzzn</instagram>
+        </idol>
+        <idol>
+            <stageName>Beomgyu</stageName>
+            <name>Beomgyu</name>
+            <surname>Choi</surname>
+            <dateOfBirth>13-03-2001</dateOfBirth>
+            <group>TOMORROW X TOGETHER</group>
+            <height unit="cm">180</height>
+            <zodiacSign>Pisces</zodiacSign>
+            <mbti>ISFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@bamgyuuuu</instagram>
+        </idol>
+        <idol>
+            <stageName>Taehyun</stageName>
+            <name>Taehyun</name>
+            <surname>Kang</surname>
+            <dateOfBirth>05-02-2002</dateOfBirth>
+            <group>TOMORROW X TOGETHER</group>
+            <height unit="cm">177</height>
+            <zodiacSign>Aquarius</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram/>
+        </idol>
+        <idol>
+            <stageName>Huening Kai</stageName>
+            <name>Kai</name>
+            <name>Kamal</name>
+            <surname>Huening</surname>
+            <dateOfBirth>14-08-2002</dateOfBirth>
+            <group>TOMORROW X TOGETHER</group>
+            <height unit="cm">183</height>
+            <zodiacSign>Leo</zodiacSign>
+            <mbti>ISTP</mbti>
+            <nationality>American</nationality>
+            <nationality>South Korean</nationality>
+            <instagram/>
+        </idol>
+        <idol>
+            <stageName>RM</stageName>
+            <name>Namjoon</name>
+            <surname>Kim</surname>
+            <dateOfBirth>12-09-1994</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">181</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>ENTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@rkive</instagram>
+        </idol>
+        <idol>
+            <stageName>Jin</stageName>
+            <name>Seokjin</name>
+            <surname>Kim</surname>
+            <dateOfBirth>04-12-1992</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">179</height>
+            <zodiacSign>Sagittarius</zodiacSign>
+            <mbti>INTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@jin</instagram>
+        </idol>
+        <idol>
+            <stageName>Suga</stageName>
+            <name>Yoongi</name>
+            <surname>Min</surname>
+            <dateOfBirth>09-03-1993</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">174</height>
+            <zodiacSign>Pisces</zodiacSign>
+            <mbti>ISTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@agustd</instagram>
+        </idol>
+        <idol>
+            <stageName>J-Hope</stageName>
+            <name>Hoseok</name>
+            <surname>Jung</surname>
+            <dateOfBirth>18-02-1994</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">177</height>
+            <zodiacSign>Aquarius</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@uarmyhope</instagram>
+        </idol>
+        <idol>
+            <stageName>Jimin</stageName>
+            <name>Jimin</name>
+            <surname>Park</surname>
+            <dateOfBirth>13-10-1995</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">174</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>ESTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@j.m</instagram>
+        </idol>
+        <idol>
+            <stageName>V</stageName>
+            <name>Taehyung</name>
+            <surname>Kim</surname>
+            <dateOfBirth>30-12-1995</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">179</height>
+            <zodiacSign>Capricorn</zodiacSign>
+            <mbti>INFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@thv</instagram>
+        </idol>
+        <idol>
+            <stageName>Jungkook</stageName>
+            <name>Jungkook</name>
+            <surname>Jeon</surname>
+            <dateOfBirth>01-09-1997</dateOfBirth>
+            <group>BTS</group>
+            <height unit="cm">177</height>
+            <zodiacSign>Virgo</zodiacSign>
+            <mbti>INTP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram/>
+        </idol>
+        <idol>
+            <stageName>Karina</stageName>
+            <name>Jimin</name>
+            <surname>Yu</surname>
+            <dateOfBirth>11-04-2000</dateOfBirth>
+            <group>aespa</group>
+            <height unit="cm">168</height>
+            <zodiacSign>Aries</zodiacSign>
+            <mbti>ENFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@katarinabluu</instagram>
+        </idol>
+        <idol>
+            <stageName>Giselle</stageName>
+            <name>Aeri</name>
+            <surname>Kim</surname>
+            <dateOfBirth>30-10-2000</dateOfBirth>
+            <group>aespa</group>
+            <height unit="cm">164</height>
+            <zodiacSign>Scorpio</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>Japanese</nationality>
+            <nationality>South Korean</nationality>
+            <instagram>@aerichandesu</instagram>
+        </idol>
+        <idol>
+            <stageName>Winter</stageName>
+            <name>Minjeong</name>
+            <surname>Kim</surname>
+            <dateOfBirth>01-01-2001</dateOfBirth>
+            <group>aespa</group>
+            <height unit="cm">165</height>
+            <zodiacSign>Capricorn</zodiacSign>
+            <mbti>INTJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@imwinter</instagram>
+        </idol>
+        <idol>
+            <stageName>NingNing</stageName>
+            <name>Yizhuo</name>
+            <name>Yetak</name>
+            <surname>Ning</surname>
+            <dateOfBirth>23-10-2002</dateOfBirth>
+            <group>aespa</group>
+            <height unit="cm">161</height>
+            <zodiacSign>Scorpio</zodiacSign>
+            <mbti>INFP</mbti>
+            <nationality>Chinese</nationality>
+            <instagram>@imnotningning</instagram>
+        </idol>
+        <idol>
+            <stageName>J.Seph</stageName>
+            <name>Taehyung</name>
+            <surname>Kim</surname>
+            <dateOfBirth>21-06-1992</dateOfBirth>
+            <group>KARD</group>
+            <height unit="cm">179</height>
+            <zodiacSign>Cancer</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@j.seph_</instagram>
+        </idol>
+        <idol>
+            <stageName>BM</stageName>
+            <name>Matthew</name>
+            <name>Jiseok</name>
+            <surname>Kim</surname>
+            <dateOfBirth>20-10-1992</dateOfBirth>
+            <group>KARD</group>
+            <height unit="cm">186</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>ESFJ</mbti>
+            <nationality>American</nationality>
+            <nationality>South Korean</nationality>
+            <instagram>@bigmatthewww</instagram>
+        </idol>
+        <idol>
+            <stageName>Somin</stageName>
+            <name>Somin</name>
+            <surname>Jeon</surname>
+            <dateOfBirth>22-08-1996</dateOfBirth>
+            <group>KARD</group>
+            <height unit="cm">163</height>
+            <zodiacSign>Leo</zodiacSign>
+            <mbti>ISFP</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@somin_jeon0822</instagram>
+        </idol>
+        <idol>
+            <stageName>Jiwoo</stageName>
+            <name>Jiwoo</name>
+            <surname>Jeon</surname>
+            <dateOfBirth>04-10-1996</dateOfBirth>
+            <group>KARD</group>
+            <height unit="cm">165</height>
+            <zodiacSign>Libra</zodiacSign>
+            <mbti>INFJ</mbti>
+            <nationality>South Korean</nationality>
+            <instagram>@_zziwooo0</instagram>
+        </idol>
+    </idols>
+    <groups>
+        <group>
+            <nameG>Stray Kids</nameG>
+            <difName>SKZ</difName>
+            <gender whatGender="boys"/>
+            <fandom>STAY</fandom>
+            <numberOfMembers>8</numberOfMembers>
+            <dateOfDebut>25-03-2018</dateOfDebut>
+            <agency>JYP Entertainment</agency>
+            <websiteG>https://straykids.jype.com</websiteG>
+            <instagramG>@realstraykids</instagramG>
+            <twitterX>@Stray_Kids</twitterX>
+            <tiktok>@jypestraykids</tiktok>
+            <youtube>https://www.youtube.com/@StrayKids</youtube>
+            <spotify>https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE?si=g8HfRS9XQkGqD8kzH_0oJw</spotify>
+        </group>
+        <group>
+            <nameG>TOMORROW X TOGETHER</nameG>
+            <difName>TXT</difName>
+            <gender whatGender="boys"/>
+            <fandom>MOA</fandom>
+            <numberOfMembers>5</numberOfMembers>
+            <dateOfDebut>04-03-2019</dateOfDebut>
+            <agency>Big Hit Music</agency>
+            <websiteG>https://ibighit.com/txt/eng/</websiteG>
+            <instagramG>@txt_bighit</instagramG>
+            <twitterX>@TXT_bighit</twitterX>
+            <tiktok>@txt.bighitent</tiktok>
+            <youtube>https://www.youtube.com/txt_bighit</youtube>
+            <spotify>https://open.spotify.com/artist/0ghlgldX5Dd6720Q3qFyQB?si=xIEYEasTQd6zzhntK2_Z7A</spotify>
+        </group>
+        <group>
+            <nameG>BTS</nameG>
+            <difName>Bangtan Boys</difName>
+            <gender whatGender="boys"/>
+            <fandom>A.R.M.Y</fandom>
+            <numberOfMembers>7</numberOfMembers>
+            <dateOfDebut>13-06-2013</dateOfDebut>
+            <agency>Big Hit Music</agency>
+            <websiteG>https://ibighit.com/bts/eng/</websiteG>
+            <instagramG>@bts.bighitofficial</instagramG>
+            <twitterX>@bts_twt</twitterX>
+            <tiktok>@bts_official_bighit</tiktok>
+            <youtube>https://www.youtube.com/channel/UCLkAepWjdylmXSltofFvsYQ</youtube>
+            <spotify>https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX?si=0EaNnek3QZSfa3hZB_csMA</spotify>
+        </group>
+        <group>
+            <nameG>aespa</nameG>
+            <difName/>
+            <gender whatGender="girls"/>
+            <fandom>MY</fandom>
+            <numberOfMembers>4</numberOfMembers>
+            <dateOfDebut>17-11-2020</dateOfDebut>
+            <agency>SM Entertainment</agency>
+            <websiteG>https://www.aespa.com</websiteG>
+            <instagramG>@aespa_official</instagramG>
+            <twitterX>@aespa_official</twitterX>
+            <tiktok>@aespa_official</tiktok>
+            <youtube>https://www.youtube.com/c/aespa</youtube>
+            <spotify>https://open.spotify.com/artist/6YVMFz59CuY7ngCxTxjpxE?si=ymdymfAnQpyfiizfv8iDEg</spotify>
+        </group>
+        <group>
+            <nameG>KARD</nameG>
+            <difName>K.A.R.D</difName>
+            <gender whatGender="mixed"/>
+            <fandom>Hidden Kard</fandom>
+            <numberOfMembers>4</numberOfMembers>
+            <dateOfDebut>19-06-2017</dateOfDebut>
+            <agency>DSP Media</agency>
+            <websiteG>https://www.kard.kr</websiteG>
+            <instagramG>@official_kard</instagramG>
+            <twitterX>@KARD_Official</twitterX>
+            <tiktok>@official.kard</tiktok>
+            <youtube>https://www.youtube.com/channel/UC5OwlwvsVmf_lXHguB6OYFw</youtube>
+            <spotify>https://open.spotify.com/artist/2JhAlkmukNvarUpGhTFXUQ?si=Lw7XPY7eQ-ak2CuH4IiZUQ</spotify>
+        </group>
+    </groups>
+    <summary>
+        <totalIdols>28</totalIdols>
+        <totalGroups>5</totalGroups>
+        <largestGroup>Stray Kids</largestGroup>
+        <smallestGroups>aespa, KARD</smallestGroups>
+        <oldestGroup>BTS</oldestGroup>
+        <youngestGroup>aespa</youngestGroup>
+        <totalBoysGroups>3</totalBoysGroups>
+        <totalGirlsGroups>1</totalGirlsGroups>
+        <totalMixedGroups>1</totalMixedGroups>
+        <tallestIdol>BM</tallestIdol>
+        <shortestIdol>NingNing</shortestIdol>
+        <oldestIdol>J.Seph</oldestIdol>
+        <youngestIdol>NingNing</youngestIdol>
+        <mostFrequentZodiacSign>Virgo</mostFrequentZodiacSign>
+        <mostFrequentMBTI>ISTP</mostFrequentMBTI>
+        <author>
+            <name>Emilia</name>
+            <surname>Szczerba</surname>
+        </author>
+        <modificationDate>2025-01-12</modificationDate>
+    </summary>
+</report>

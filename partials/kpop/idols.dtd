@@ -1,0 +1,84 @@
+<!ENTITY hight "cm">
+<!ENTITY USD "USD">
+<!ENTITY KRW "KRW">
+<!ENTITY % addressElements "street, district, city, country">
+
+<!ELEMENT kpopIdols (metadata?, groups, idols, agencies, positions)>
+
+<!--groups-->
+<!ELEMENT groups (group+)>
+<!ELEMENT group (nameG, difName?, gender, fandom, member, inAgency, websiteG?, instagramG?, twitterX*, tiktok?, youtube?, spotify?)>
+<!ATTLIST group
+        IDG ID #REQUIRED
+        numberOfMembers CDATA #REQUIRED
+        dateOfDebut NMTOKEN #REQUIRED>
+<!ELEMENT nameG (#PCDATA)>
+<!ELEMENT difName (#PCDATA)>
+<!ELEMENT gender EMPTY>
+<!ATTLIST gender whatGender (boys | girls | mixed) #REQUIRED>
+<!ELEMENT fandom (#PCDATA)>
+<!ELEMENT member EMPTY>
+<!ATTLIST member IDRefM IDREFS #REQUIRED>
+<!ELEMENT inAgency EMPTY>
+<!ATTLIST inAgency IDRefA IDREFS #REQUIRED>
+<!ELEMENT websiteG (#PCDATA)>
+<!ELEMENT instagramG (#PCDATA)>
+<!ELEMENT twitterX (#PCDATA)>
+<!ELEMENT tiktok (#PCDATA)>
+<!ELEMENT youtube (#PCDATA)>
+<!ELEMENT spotify (#PCDATA)>
+
+<!--idols-->
+<!ELEMENT idols (idol+)>
+<!ELEMENT idol (stageName, nameI+, surname+, inGroup, whatPosition, height, zodiacSign, mbti, nationality+, instagram*)>
+<!ATTLIST idol
+        IDI ID #REQUIRED
+        dateOfBirth CDATA #REQUIRED>
+<!ELEMENT nameI (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT stageName (#PCDATA)>
+<!ELEMENT inGroup EMPTY>
+<!ATTLIST inGroup IDRefG IDREF #REQUIRED>
+<!ELEMENT whatPosition EMPTY>
+<!ATTLIST whatPosition IDRefP IDREFS #REQUIRED>
+<!ELEMENT height (#PCDATA)>
+<!ATTLIST height
+        unit (cm | m | in | ft) #REQUIRED>
+<!ELEMENT zodiacSign (#PCDATA)>
+<!ATTLIST zodiacSign
+        type (Aries | Taurus | Gemini | Cancer | Leo | Virgo | Libra | Scorpio | Sagittarius | Capricorn | Aquarius | Pisces) #IMPLIED>
+<!ELEMENT mbti (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT instagram (#PCDATA)>
+
+<!--agencies-->
+<!ELEMENT agencies (agency+)>
+<!ELEMENT agency (nameA, address, founder, phoneNumber?, email+, websiteA, revenue+)>
+<!ATTLIST agency
+        IDA ID #REQUIRED
+        yearOfFounding CDATA #REQUIRED>
+<!ELEMENT nameA (#PCDATA)>
+<!ELEMENT address (%addressElements;)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT district (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT founder (#PCDATA)>
+<!ELEMENT phoneNumber (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT websiteA (#PCDATA)>
+<!ELEMENT revenue (#PCDATA)>
+<!ATTLIST revenue
+        currency (USD | KRW | EUR) #REQUIRED
+        unit (billions | trillions | millions) #REQUIRED>
+
+<!--positions-->
+<!ELEMENT positions (position+)>
+<!ELEMENT position (#PCDATA)>
+<!ATTLIST position
+        IDP ID #REQUIRED>
+
+<!--metdata-->
+<!ELEMENT metadata (author+, modificationDate)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT modificationDate (#PCDATA)>

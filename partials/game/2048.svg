@@ -1,0 +1,237 @@
+<svg viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>2048 Game</title>
+    <rect x="0" y="0" width="100%" height="100%" fill="#F5F5F5"/>
+    <!-- Gray board background -->
+    <rect x="40" y="40" width="420" height="420" fill="#808080" rx="5"/>
+    <text x="500" y="80" font-size="24" fill="#2E5A1C">Score:</text>
+    <text id="score" x="500" y="120" font-size="32" fill="#2E5A1C">0</text>
+    <text x="500" y="200" font-size="14" fill="#2E5A1C">Use arrow keys to move tiles</text>
+    <text x="500" y="220" font-size="14" fill="#2E5A1C">Combine same numbers to reach 2048!</text>
+    <g id="cells"></g>
+    <g id="tiles"></g>
+
+    <text x="400" y="480" font-size="10" fill="#2E5A1C" text-anchor="middle">
+        music: "i hate to admit" (instrumental) by Bang Chan
+    </text>
+    <script type="text/ecmascript">
+        <![CDATA[
+        let board = Array(4).fill().map(() => Array(4).fill(0));
+        let score = 0;
+
+        const colors = {
+            2: "#E8F5E9",    // Lightest green
+            4: "#C8E6C9",
+            8: "#A5D6A7",
+            16: "#81C784",
+            32: "#66BB6A",
+            64: "#4CAF50",
+            128: "#43A047",
+            256: "#388E3C",
+            512: "#2E7D32",
+            1024: "#1B5E20",
+            2048: "#0A3D0A"   // Darkest green
+        };
+
+        function initializeMusic() {
+            const audio = new Audio('bangchan.mp3');
+            audio.loop = true;
+
+            const startMusic = () => {
+                audio.play().catch(err => {
+                    console.warn("Muzyka nie mogła się odtworzyć automatycznie: ", err);
+                });
+                window.removeEventListener('keydown', startMusic);
+            };
+            window.addEventListener('keydown', startMusic);
+        }
+
+        function initializeBoard() {
+            initializeMusic();
+            const cellsGroup = document.getElementById('cells');
+            const tileSize = 85;
+            const gap = 15;
+
+            for (let i = 0; i < 4; i++) {
+                for (let j = 0; j < 4; j++) {
+                    const cell = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                    cell.setAttribute("x", 55 + j * (tileSize + gap));
+                    cell.setAttribute("y", 55 + i * (tileSize + gap));
+                    cell.setAttribute("width", tileSize);
+                    cell.setAttribute("height", tileSize);
+                    cell.setAttribute("fill", "#A9A9A9");  // Light gray for empty cells
+                    cell.setAttribute("rx", "5");
+                    cellsGroup.appendChild(cell);
+                }
+            }
+
+            addRandomTile();
+            addRandomTile();
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            const tilesGroup = document.getElementById('tiles');
+            tilesGroup.innerHTML = '';
+            const tileSize = 85;
+            const gap = 15;
+
+            for (let i = 0; i < 4; i++) {
+                for (let j = 0; j < 4; j++) {
+                    if (board[i][j] !== 0) {
+                        const tile = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                        tile.setAttribute("x", 55 + j * (tileSize + gap));
+                        tile.setAttribute("y", 55 + i * (tileSize + gap));
+                        tile.setAttribute("width", tileSize);
+                        tile.setAttribute("height", tileSize);
+                        tile.setAttribute("fill", colors[board[i][j]] || "#E8F5E9");
+                        tile.setAttribute("rx", "5");
+                        tilesGroup.appendChild(tile);
+
+                        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                        text.setAttribute("x", 55 + j * (tileSize + gap) + tileSize/2);
+                        text.setAttribute("y", 55 + i * (tileSize + gap) + tileSize/2);
+                        text.setAttribute("text-anchor", "middle");
+                        text.setAttribute("dominant-baseline", "middle");
+                        text.setAttribute("fill", board[i][j] <= 32 ? "#2E5A1C" : "#FFFFFF");
+                        text.setAttribute("font-size", board[i][j] >= 1000 ? "24" : "32");
+                        text.textContent = board[i][j];
+                        tilesGroup.appendChild(text);
+                    }
+                }
+            }
+
+            document.getElementById('score').textContent = score;
+        }
+
+        // Rest of the game logic remains unchanged
+        function addRandomTile() {
+            const emptyCells = [];
+            for (let i = 0; i < 4; i++) {
+                for (let j = 0; j < 4; j++) {
+                    if (board[i][j] === 0) {
+                        emptyCells.push({i, j});
+                    }
+                }
+            }
+
+            if (emptyCells.length > 0) {
+                const {i, j} = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+                board[i][j] = Math.random() < 0.9 ? 2 : 4;
+            }
+        }
+
+        function move(direction) {
+            const oldBoard = board.map(row => [...row]);
+            let moved = false;
+
+            function compress() {
+                const newBoard = Array(4).fill().map(() => Array(4).fill(0));
+                for (let i = 0; i < 4; i++) {
+                    let col = 0;
+                    for (let j = 0; j < 4; j++) {
+                        if (board[i][j] !== 0) {
+                            newBoard[i][col] = board[i][j];
+                            if (col !== j) moved = true;
+                            col++;
+                        }
+                    }
+                }
+                board = newBoard;
+            }
+
+            function merge() {
+                for (let i = 0; i < 4; i++) {
+                    for (let j = 0; j < 3; j++) {
+                        if (board[i][j] !== 0 && board[i][j] === board[i][j + 1]) {
+                            board[i][j] *= 2;
+                            score += board[i][j];
+                            board[i][j + 1] = 0;
+                            moved = true;
+                        }
+                    }
+                }
+            }
+
+            function rotateBoard(times) {
+                for (let t = 0; t < times; t++) {
+                    const newBoard = Array(4).fill().map(() => Array(4).fill(0));
+                    for (let i = 0; i < 4; i++) {
+                        for (let j = 0; j < 4; j++) {
+                            newBoard[j][3 - i] = board[i][j];
+                        }
+                    }
+                    board = newBoard;
+                }
+            }
+
+            switch(direction) {
+                case 'ArrowLeft':
+                    break;
+                case 'ArrowRight':
+                    rotateBoard(2);
+                    break;
+                case 'ArrowUp':
+                    rotateBoard(3);
+                    break;
+                case 'ArrowDown':
+                    rotateBoard(1);
+                    break;
+            }
+
+            compress();
+            merge();
+            compress();
+
+            switch(direction) {
+                case 'ArrowRight':
+                    rotateBoard(2);
+                    break;
+                case 'ArrowUp':
+                    rotateBoard(1);
+                    break;
+                case 'ArrowDown':
+                    rotateBoard(3);
+                    break;
+            }
+
+            if (moved) {
+                addRandomTile();
+                updateDisplay();
+                checkGameStatus();
+            }
+        }
+
+        function checkGameStatus() {
+            for (let i = 0; i < 4; i++) {
+                for (let j = 0; j < 4; j++) {
+                    if (board[i][j] === 2048) {
+                        alert('Congratulations! You won!');
+                        return;
+                    }
+                }
+            }
+
+            for (let i = 0; i < 4; i++) {
+                for (let j = 0; j < 4; j++) {
+                    if (board[i][j] === 0) return;
+                    if (i < 3 && board[i][j] === board[i + 1][j]) return;
+                    if (j < 3 && board[i][j] === board[i][j + 1]) return;
+                }
+            }
+
+            alert('Game Over! Your score: ' + score);
+            window.location.reload();
+        }
+
+        function handleKeyPress(e) {
+            if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
+                e.preventDefault();
+                move(e.key);
+            }
+        }
+
+        window.addEventListener('keydown', handleKeyPress);
+        initializeBoard();
+    ]]>
+    </script>
+</svg>

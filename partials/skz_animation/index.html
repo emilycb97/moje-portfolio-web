@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Animowany Plakat - Emilia Szczerba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #050505;
+      color: #e0e0e0;
+      font-family: 'Oxanium', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #00ff66;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      color: #fff;
+      transform: translateX(-5px);
+    }
+
+    .btn-download {
+      display: inline-block;
+      background-color: transparent;
+      color: #00ff66;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-right: 10px;
+      border: 1px solid #00ff66;
+      transition: 0.3s;
+      font-size: 0.85rem;
+    }
+
+    .btn-download:hover {
+      background-color: #00ff66;
+      color: #050505;
+    }
+
+    h1 {
+      color: #00ff66;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+
+    .description {
+      background-color: #0f0f0f;
+      padding: 20px;
+      border-radius: 4px;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    /* Stylizacja sekcji wideo */
+    .video-container {
+      margin-top: 40px;
+      border: 1px solid #222;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #000;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="../../index.html?page=projects" target="_top" class="btn-back">← Wróć do spisu projektów</a>
+
+  <h1>Animowany Plakat: Stray Kids</h1>
+
+  <div class="description">
+    <p>Rozwinięcie poprzedniego projektu – ożywienie statycznego plakatu wektorowego. Animacja została w całości zrealizowana w programie <strong>Krita</strong>. Praca polegała na przygotowaniu klatek kluczowych, manipulacji warstwami (Motion Design) oraz dodaniu dynamiki, która idealnie pasuje do klimatu promującego wydarzenie muzyczne.</p>
+    <a href="skz.mp4" download class="btn-download">Pobierz wideo (MP4)</a>
+    <a href="straykids.kra" download class="btn-download">Pobierz projekt (KRA)</a>
+  </div>
+
+  <div class="video-container">
+    <video controls autoplay loop muted>
+      <source src="skz.mp4" type="video/mp4">
+      Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+    </video>
+  </div>
+</div>
+
+</body>
+</html>
