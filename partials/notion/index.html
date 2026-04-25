@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Organizacja Podróży (Notion) - Emilia Szczerba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Oxanium', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #00ff66;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: transparent;
+            color: #00ff66;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-right: 10px;
+            border: 1px solid #00ff66;
+            transition: 0.3s;
+            font-size: 0.85rem;
+        }
+
+        .btn-download:hover {
+            background-color: #00ff66;
+            color: #050505;
+        }
+
+        h1 {
+            color: #00ff66;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #fff;
+            margin-top: 50px;
+            border-left: 4px solid #00ff66;
+            padding-left: 15px;
+        }
+
+        .description {
+            background-color: #0f0f0f;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 1px solid #222;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+            border-color: #00ff66;
+        }
+
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+
+        #lightbox img {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 4px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .arrow {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .arrow:hover {
+            color: #00ff66;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="../../index.html?page=projects" target="_top" class="btn-back">← Wróć do spisu projektów</a>
+
+    <h1>Organizacja Podróży (Notion)</h1>
+
+    <div class="description">
+        <p>Zdolność analitycznego myślenia, zbierania danych i zarządzania czasem to uniwersalne umiejętności projektowe. Aby zaprezentować moją biegłość w obsłudze narzędzia <strong>Notion</strong>, udostępniam swoje prywatne logistyki wyjazdów. Projekty te obejmują szczegółowe rozplanowanie każdego dnia, kalkulacje budżetowe, estymację czasu oraz dokładny research (godziny otwarcia, trasy, powody wizyty).</p>
+
+        <a href="https://www.notion.so/Athens-4e58f4b0860a458e9af2f1c714c75ba8?source=copy_link" target="_blank" class="btn-download">Zobacz plan: Ateny</a>
+        <a href="https://www.notion.so/Krak-w-74f11b7fc35242d59b99b7b331fa7f13?source=copy_link" target="_blank" class="btn-download">Zobacz plan: Kraków</a>
+    </div>
+
+    <h2>Interaktywne Plany Podróży</h2>
+
+    <div class="map-wrapper">
+        <div class="map-header">TRASA I PUNKTY: ATENY</div>
+        <iframe src="https://www.google.com/maps/d/u/0/edit?mid=1ZGAWjP1S53EU70Z1ZTv6U4F5YsyXFjw&ll=50.065937086971175%2C19.95756425000001&z=13" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="map-wrapper">
+        <div class="map-header">TRASA I PUNKTY: KRAKÓW</div>
+        <iframe src="https://www.google.com/maps/d/u/0/edit?mid=1ZGAWjP1S53EU70Z1ZTv6U4F5YsyXFjw&usp=sharing" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
