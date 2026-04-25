@@ -383,22 +383,12 @@ void mousePressed() {
   }
 }
 
-/**
- * Obsłuż przewijanie kółkiem myszy do kontroli głębokości
- * Zapewnia intuicyjną kontrolę podobną do zoomu nad głębokością rekursji
- * @param event MouseEvent zawierający informację o kierunku przewijania
- */
-void mouseWheel(MouseEvent event) {
-  float e = event.getCount(); // Pobierz kierunek przewijania (-1 dla góry, +1 dla dołu)
-  
-  if (e < 0) {
-    // Przewiń w górę: zwiększ głębokość (więcej szczegółów)
-    targetDepth = min(12, targetDepth + 1);
-  } else {
-    // Przewiń w dół: zmniejsz głębokość (mniej szczegółów)
+void mouseScrolled() {
+  if (mouseScroll > 0) {
     targetDepth = max(1, targetDepth - 1);
+    animateDepth = false;
+  } else {
+    targetDepth = min(maxDepth, targetDepth + 1);
+    animateDepth = false;
   }
-  
-  // Wyłącz automatyczną animację gdy użytkownik ręczne kontroluje głębokość
-  animateDepth = false;
 }
