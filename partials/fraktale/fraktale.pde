@@ -383,4 +383,12 @@ void mousePressed() {
   }
 }
 
-
+void mouseScrolled() {
+  if (mouseScroll > 0) {
+    targetDepth = max(1, targetDepth - 1);
+    animateDepth = false;
+  } else {
+    targetDepth = min(maxDepth, targetDepth + 1);
+    animateDepth = false;
+  }
+}
