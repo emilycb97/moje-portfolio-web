@@ -39,7 +39,7 @@ float lockedAngle = PI / 8; // Kąt używany po zablokowaniu (domyślnie 22.5°)
  */
 void setup() {
   size(1200, 900); // Ustaw rozmiar okna na 1200x900 pikseli
-  surface.setResizable(true); // Pozwól na zmianę rozmiaru okna
+//  surface.setResizable(true);
   background(20, 20, 30); // Ustaw ciemne niebiesko-szare tło
   
   // Inicjalizuj paletę kolorów dla różnych głębokości rekursji
