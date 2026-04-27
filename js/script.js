@@ -198,3 +198,28 @@ function toggleFullscreen(containerId) {
         }
     }
 }
+
+function toggleLanguage() {
+    const body = document.body;
+    const btn = document.querySelector('.lang-toggle');
+
+    body.classList.toggle('lang-en');
+
+    if (body.classList.contains('lang-en')) {
+        btn.innerText = 'PL';
+        localStorage.setItem('selectedLang', 'en');
+    } else {
+        btn.innerText = 'EN';
+        localStorage.setItem('selectedLang', 'pl');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('selectedLang');
+    const btn = document.querySelector('.lang-toggle');
+
+    if (savedLang === 'en' && btn) {
+        document.body.classList.add('lang-en');
+        btn.innerText = 'PL';
+    }
+});

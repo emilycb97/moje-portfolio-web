@@ -593,3 +593,43 @@ model-viewer {
     height: 100%;
     --poster-color: transparent;
 }
+
+/* --- Przełącznik języka --- */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgba(5, 5, 5, 0.8);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    backdrop-filter: blur(4px);
+}
+
+.lang-toggle:hover {
+    background-color: var(--accent-green);
+    color: var(--bg-dark);
+}
+
+.en {
+    display: none;
+}
+
+body.lang-en .pl {
+    display: none;
+}
+
+body.lang-en .en {
+    display: block;
+}
+
+body.lang-en span.en {
+    display: inline;
+}

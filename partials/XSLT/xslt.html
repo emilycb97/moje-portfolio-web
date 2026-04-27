@@ -8,107 +8,138 @@
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-  <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
-  <h1>Transformacja Danych XML (K-pop Database)</h1>
+  <a href="../../index.html?page=projects" class="btn-back">
+    <span class="pl">← Wróć do spisu projektów</span>
+    <span class="en">← Back to projects</span>
+  </a>
+
+  <h1>
+    <span class="pl">Transformacja danych XML (K-pop Database)</span>
+    <span class="en">XML data transformation (K-pop Database)</span>
+  </h1>
 
   <div class="description">
-    <p><strong>O projekcie:</strong> Ten projekt demonstruje procesowanie i transformację surowych danych. Główna baza danych została napisana w języku XML, a następnie przy użyciu arkuszy stylów XSLT przetworzona na różne formaty wyjściowe bez ingerencji w oryginalne dane.</p>
+    <p>
+      <span class="pl"><strong>O projekcie:</strong> Ten projekt demonstruje procesowanie i transformację surowych danych. Główna baza danych została napisana w języku XML, a następnie przy użyciu arkuszy stylów XSLT przetworzona na różne formaty wyjściowe bez ingerencji w oryginalne dane.</span>
+      <span class="en"><strong>About the project:</strong> This project demonstrates the processing and transformation of raw data. The main database was written in XML, and then processed using XSLT style sheets into various output formats without interfering with the original data.</span>
+    </p>
   </div>
 
-  <h2>1. Dane Wejściowe (Źródło)</h2>
+  <h2>
+    <span class="pl">1. Dane wejściowe (Źródło)</span>
+    <span class="en">1. Input data (Source)</span>
+  </h2>
   <div class="file-grid">
     <div class="file-card full-width-card">
       <h3>k-popIdols.xml</h3>
-      <p>Główna relacyjna baza danych zawierająca informacje o zespołach, idolach i agencjach. Posiada własne metadane i atrybuty.</p>
-      <span class="tag">Składnia XML</span>
+      <p class="pl">Główna relacyjna baza danych zawierająca informacje o zespołach, idolach i agencjach. Posiada własne metadane i atrybuty.</p>
+      <p class="en">The main relational database containing information about groups, idols, and agencies. It has its own metadata and attributes.</p>
+      <span class="tag pl">Składnia XML</span>
+      <span class="tag en">XML Syntax</span>
       <br>
-      <a href="k-popIdols.xml" target="_blank" class="btn">Zobacz kod</a>
-      <a href="k-popIdols.xml" download class="btn-download">Pobierz</a>
+      <a href="k-popIdols.xml" target="_blank" class="btn"><span class="pl">Zobacz kod</span><span class="en">View code</span></a>
+      <a href="k-popIdols.xml" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
   </div>
 
-  <h2>2. Skrypty Transformujące (XSLT)</h2>
-  <p>Skrypty odpowiedzialne za "przetłumaczenie" drzewa XML na inne języki znaczników i formaty.</p>
+  <h2>
+    <span class="pl">2. Skrypty transformujące (XSLT)</span>
+    <span class="en">2. Transforming scripts (XSLT)</span>
+  </h2>
+  <p class="pl">Skrypty odpowiedzialne za "przetłumaczenie" drzewa XML na inne języki znaczników i formaty.</p>
+  <p class="en">Scripts responsible for "translating" the XML tree into other markup languages and formats.</p>
 
   <div class="file-grid">
     <div class="file-card">
       <h3>XSLT → XHTML</h3>
-      <p>Skrypt generujący stronę internetową z tabelami z surowych danych XML.</p>
+      <p class="pl">Skrypt generujący stronę internetową z tabelami z surowych danych XML.</p>
+      <p class="en">A script generating a website with tables from raw XML data.</p>
       <span class="tag">kpop_to_xhtml.xsl</span>
-      <br>
-      <a href="kpop_to_xhtml.xsl" target="_blank" class="btn">Zobacz skrypt</a>
-      <a href="kpop_to_xhtml.xsl" download class="btn-download">Pobierz</a>
+      <a href="kpop_to_xhtml.xsl" target="_blank" class="btn"><span class="pl">Zobacz skrypt</span><span class="en">View script</span></a>
+      <a href="kpop_to_xhtml.xsl" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
 
     <div class="file-card">
       <h3>XSLT → SVG</h3>
-      <p>Matematyczne transformacje mapujące dane XML prosto na wektorowy wykres graficzny.</p>
+      <p class="pl">Matematyczne transformacje mapujące dane XML prosto na wektorowy wykres graficzny.</p>
+      <p class="en">Mathematical transformations mapping XML data straight to a vector graphic chart.</p>
       <span class="tag">kpop_to_svg.xsl</span>
-      <br>
-      <a href="kpop_to_svg.xsl" target="_blank" class="btn">Zobacz skrypt</a>
-      <a href="kpop_to_svg.xsl" download class="btn-download">Pobierz</a>
+      <a href="kpop_to_svg.xsl" target="_blank" class="btn"><span class="pl">Zobacz skrypt</span><span class="en">View script</span></a>
+      <a href="kpop_to_svg.xsl" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
 
     <div class="file-card">
       <h3>XSLT → TXT</h3>
-      <p>Konwersja struktury drzewiastej na płaski, równo sformatowany raport tekstowy.</p>
+      <p class="pl">Konwersja struktury drzewiastej na płaski, równo sformatowany raport tekstowy.</p>
+      <p class="en">Conversion of a tree structure into a flat, evenly formatted text report.</p>
       <span class="tag">kpop_to_txt.xsl</span>
-      <br>
-      <a href="kpop_to_txt.xsl" target="_blank" class="btn">Zobacz skrypt</a>
-      <a href="kpop_to_txt.xsl" download class="btn-download">Pobierz</a>
+      <a href="kpop_to_txt.xsl" target="_blank" class="btn"><span class="pl">Zobacz skrypt</span><span class="en">View script</span></a>
+      <a href="kpop_to_txt.xsl" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
 
     <div class="file-card">
       <h3>XML → XML</h3>
-      <p>Filtrowanie i restrukturyzacja. Skrypt wyciągający podsumowanie z wielkiej bazy do nowego XML.</p>
+      <p class="pl">Filtrowanie i restrukturyzacja. Skrypt wyciągający podsumowanie z wielkiej bazy do nowego XML.</p>
+      <p class="en">Filtering and restructuring. A script extracting a summary from a large database into a new XML.</p>
       <span class="tag">xml_to_xml.xsl</span>
-      <br>
-      <a href="xml_to_xml.xsl" target="_blank" class="btn">Zobacz skrypt</a>
-      <a href="xml_to_xml.xsl" download class="btn-download">Pobierz</a>
+      <a href="xml_to_xml.xsl" target="_blank" class="btn"><span class="pl">Zobacz skrypt</span><span class="en">View script</span></a>
+      <a href="xml_to_xml.xsl" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
   </div>
 
-  <h2>3. Wyniki Transformacji (Output)</h2>
+  <h2>
+    <span class="pl">3. Wyniki transformacji (Output)</span>
+    <span class="en">3. Transformation results (Output)</span>
+  </h2>
   <div class="file-grid">
     <div class="file-card">
-      <h3>Strona Internetowa</h3>
-      <p>Zestawienie tabelaryczne wygenerowane z XML i sformatowane przez style CSS.</p>
+      <h3 class="pl">Strona internetowa</h3>
+      <h3 class="en">Website</h3>
+      <p class="pl">Zestawienie tabelaryczne wygenerowane z XML i sformatowane przez style CSS.</p>
+      <p class="en">Tabular summary generated from XML and formatted by CSS styles.</p>
       <span class="tag">XHTML + CSS</span>
-      <br>
-      <a href="output/kpop_xhtml.xhtml" target="_blank" class="btn">Otwórz stronę</a>
-      <a href="output/kpop_xhtml.xhtml" download class="btn-download">Pobierz</a>
+      <a href="output/kpop_xhtml.xhtml" target="_blank" class="btn"><span class="pl">Otwórz stronę</span><span class="en">Open website</span></a>
+      <a href="output/kpop_xhtml.xhtml" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
 
     <div class="file-card">
-      <h3>Wykres Danych</h3>
-      <p>Wizualizacja statystyk znaków zodiaku wygenerowana czysto matematycznie z bazy do pliku graficznego.</p>
-      <span class="tag">Grafika SVG</span>
-      <br>
-      <a href="output/kpop_svg.svg" target="_blank" class="btn">Zobacz wykres</a>
-      <a href="output/kpop_svg.svg" download class="btn-download">Pobierz</a>
+      <h3 class="pl">Wykres danych</h3>
+      <h3 class="en">Data chart</h3>
+      <p class="pl">Wizualizacja statystyk znaków zodiaku wygenerowana czysto matematycznie z bazy do pliku graficznego.</p>
+      <p class="en">Visualization of zodiac sign statistics generated purely mathematically from the database into a graphic file.</p>
+      <span class="tag pl">Grafika SVG</span>
+      <span class="tag en">SVG Graphic</span>
+      <a href="output/kpop_svg.svg" target="_blank" class="btn"><span class="pl">Zobacz wykres</span><span class="en">View chart</span></a>
+      <a href="output/kpop_svg.svg" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
 
     <div class="file-card">
-      <h3>Raport Tekstowy</h3>
-      <p>Sformatowany dokument tekstowy wygenerowany na podstawie danych z bazy.</p>
-      <span class="tag">Czysty plik TXT</span>
-      <br>
-      <a href="output/kpop_txt.txt" target="_blank" class="btn">Przeczytaj raport</a>
-      <a href="output/kpop_txt.txt" download class="btn-download">Pobierz</a>
+      <h3 class="pl">Raport tekstowy</h3>
+      <h3 class="en">Text report</h3>
+      <p class="pl">Sformatowany dokument tekstowy wygenerowany na podstawie danych z bazy.</p>
+      <p class="en">A formatted text document generated based on data from the database.</p>
+      <span class="tag pl">Czysty plik TXT</span>
+      <span class="tag en">Pure TXT file</span>
+      <a href="output/kpop_txt.txt" target="_blank" class="btn"><span class="pl">Przeczytaj raport</span><span class="en">Read report</span></a>
+      <a href="output/kpop_txt.txt" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
 
     <div class="file-card">
-      <h3>Raport XML</h3>
-      <p>Przefiltrowana i zrestrukturyzowana nowa baza danych wyciągnięta z pliku głównego.</p>
+      <h3 class="pl">Raport XML</h3>
+      <h3 class="en">XML report</h3>
+      <p class="pl">Przefiltrowana i zrestrukturyzowana nowa baza danych wyciągnięta z pliku głównego.</p>
+      <p class="en">Filtered and restructured new database extracted from the main file.</p>
       <span class="tag">XML to XML</span>
-      <br>
-      <a href="output/kpop_raport.xml" target="_blank" class="btn">Zobacz nowy XML</a>
-      <a href="output/kpop_raport.xml" download class="btn-download">Pobierz</a>
+      <a href="output/kpop_raport.xml" target="_blank" class="btn"><span class="pl">Zobacz nowy XML</span><span class="en">View new XML</span></a>
+      <a href="output/kpop_raport.xml" download class="btn-download"><span class="pl">Pobierz</span><span class="en">Download</span></a>
     </div>
   </div>
 </div>
+
+<script src="../../js/script.js"></script>
 
 </body>
 </html>

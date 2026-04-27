@@ -8,20 +8,40 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
 
-    <h1>Projekt: Pokój (Inspiracja Stray Kids)</h1>
+    <h1>
+        <span class="pl">Projekt: Pokój (inspiracja Stray Kids)</span>
+        <span class="en">Project: Room (Stray Kids inspired)</span>
+    </h1>
 
     <div class="description">
-        <p>Projekt wnętrza będący cyfrową interpretacją scenografii z programu <strong>"2 Kids Room 2025"</strong> grupy Stray Kids. Model został wykonany w programie <strong>Blender</strong> z dużą dbałością o detale wyposażenia oraz specyficzny klimat oświetleniowy, który nadaje pomieszczeniu intymny i nowoczesny charakter. Praca nad projektem obejmowała modelowanie mebli, teksturowanie oraz ustawienie renderu w czasie rzeczywistym.</p>
+        <div class="pl">
+            <p>Projekt wnętrza będący cyfrową interpretacją scenografii z programu <strong>"2 Kids Room 2025"</strong> grupy Stray Kids. Model został wykonany w programie <strong>Blender</strong> z dużą dbałością o detale wyposażenia oraz specyficzny klimat oświetleniowy, który nadaje pomieszczeniu intymny i nowoczesny charakter. Praca nad projektem obejmowała modelowanie mebli, teksturowanie oraz ustawienie renderu w czasie rzeczywistym.</p>
 
-        <p style="color: #888; font-size: 0.85rem; font-style: italic; margin-top: 10px;">
-            ⚠️ Uwaga: Ze względu na dużą liczbę tekstur wysokiej rozdzielczości, model może ładować się nieco dłużej.
-        </p>
+            <p style="color: #888; font-size: 0.85rem; font-style: italic; margin-top: 10px;">
+                ⚠️ Uwaga: Ze względu na dużą liczbę tekstur wysokiej rozdzielczości, model może ładować się nieco dłużej.
+            </p>
+        </div>
 
-        <a href="room.glb" download class="btn-download">Pobierz model (.GLB)</a>
+        <div class="en">
+            <p>Interior design project being a digital interpretation of the <strong>"2 Kids Room 2025"</strong> set by Stray Kids. The model was created in <strong>Blender</strong> with great attention to furnishing details and a specific lighting atmosphere that gives the room an intimate and modern character. Work on the project included furniture modeling, texturing, and setting up real-time rendering.</p>
+            <p style="color: #888; font-size: 0.85rem; font-style: italic; margin-top: 10px;">
+                ⚠️ Note: The project may take a while to load due to high texture count.
+            </p>
+        </div>
+
+        <a href="room.glb" download class="btn-download">
+            <span class="pl">Pobierz model (.GLB)</span>
+            <span class="en">Download model (.GLB)</span>
+        </a>
+
     </div>
 
     <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">

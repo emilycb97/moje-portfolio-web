@@ -8,20 +8,38 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
 
-    <h1>Projekt: Wyrzeźbiona kołatka do drzwi</h1>
+    <h1>
+        <span class="pl">Projekt: Wyrzeźbiona kołatka do drzwi</span>
+        <span class="en">Project: Sculpted door knocker</span>
+    </h1>
 
     <div class="description">
-        <p>Cyfrowy model klasycznej kołatki do drzwi wyrzeźbiony w programie <strong>Blender</strong>. W przeciwieństwie do form w pełni organicznych, ten projekt wymagał połączenia miękkiego rzeźbienia z bardziej twardymi, symetrycznymi elementami architektonicznymi (tzw. hard-surface). Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
-        <a href="kolatka.blend" download class="btn-download">Pobierz model (.blend)</a>
+        <div class="pl">
+            <p>Cyfrowy model klasycznej kołatki do drzwi wyrzeźbiony w programie <strong>Blender</strong>. W przeciwieństwie do form w pełni organicznych, ten projekt wymagał połączenia miękkiego rzeźbienia z bardziej twardymi, symetrycznymi elementami architektonicznymi (tzw. hard-surface). Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
+        </div>
+        <div class="en">
+            <p>A digital model of a classic door knocker sculpted in <strong>Blender</strong>. Unlike fully organic forms, this project required combining soft sculpting with more hard, symmetrical architectural elements (so-called hard-surface). Below is an interactive preview of the exported model in GLB format.</p>
+        </div>
+        <a href="kolatka.blend" download class="btn-download">
+            <span class="pl">Pobierz model (.blend)</span>
+            <span class="en">Download model (.blend)</span>
+        </a>
     </div>
 
     <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
 
-        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">⛶ Pełny ekran</button>
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">
+            <span class="pl">⛶ Pełny ekran</span>
+            <span class="en">⛶ Fullscreen</span>
+        </button>
 
         <model-viewer
                 src="kolatka.glb"

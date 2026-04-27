@@ -8,32 +8,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
-<body class = "subpage">
+<body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-    <a href="../../index.html?page=projects" target="_top" class="btn-back">← Wróć do spisu projektów</a>
+    <a href="../../index.html?page=projects" target="_top" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
 
-    <h1>Generator Fraktali (Processing)</h1>
+    <h1>
+        <span class="pl">Generator fraktali (Processing)</span>
+        <span class="en">Fractal generator (Processing)</span>
+    </h1>
 
     <div class="description">
-        <p>Projekt z kategorii <strong>Creative Coding</strong> napisany w języku Java przy użyciu środowiska Processing. Jest to interaktywny generator pozwala na generowanie i manipulację strukturami rekursywnymi (Drzewo Fraktalne oraz Trójkąt Sierpińskiego). Kod źródłowy jest renderowany w czasie rzeczywistym bezpośrednio w przeglądarce dzięki technologii WebGL/Canvas.</p>
+        <div class="pl">
+            <p>Projekt z kategorii <strong>Creative Coding</strong> napisany w języku Java przy użyciu środowiska Processing. Jest to interaktywny generator pozwala na generowanie i manipulację strukturami rekursywnymi (Drzewo Fraktalne oraz Trójkąt Sierpińskiego). Kod źródłowy jest renderowany w czasie rzeczywistym bezpośrednio w przeglądarce dzięki technologii WebGL/Canvas.</p>
+        </div>
+        <div class="en">
+            <p>A <strong>Creative Coding</strong> project written in Java using the Processing environment. It is an interactive generator that allows the generation and manipulation of recursive structures (Fractal Tree and Sierpinski Triangle). The source code is rendered in real-time directly in the browser thanks to WebGL/Canvas technology.</p>
+        </div>
 
-        <a href="fraktale.pde" download class="btn-download">Pobierz kod (PDE)</a>
+        <a href="fraktale.pde" download class="btn-download">
+            <span class="pl">Pobierz kod (PDE)</span>
+            <span class="en">Download code (PDE)</span>
+        </a>
     </div>
 
     <div class="canvas-container">
         <canvas data-processing-sources="fraktale.pde" tabindex="0"></canvas>
 
         <div class="controls-info">
-            <strong>Jak sterować:</strong><br>
-            <span>Lewy Klik Myszy</span> - Zmiana fraktala (Drzewo / Sierpiński)<br>
-            <span>Strzałki GÓRA/DÓŁ</span> - Zmiana głębokości rekursji<br>
-            <span>Ruszanie Myszy LEWO/PRAWO</span> - Zmiana kąta gałęzi (dla drzewa)<br>
-            <span>Klawisz 'A'</span> - Włącz/Wyłącz animację<br>
-            <span>Klawisz 'C'</span> - Przełącz tryb kolorowania
+            <div class="pl">
+                <strong>Jak sterować:</strong><br>
+                <span>Lewy Klik Myszy</span> - Zmiana fraktala (Drzewo / Sierpiński)<br>
+                <span>Strzałki GÓRA/DÓŁ</span> - Zmiana głębokości rekursji<br>
+                <span>R</span> - Reset
+            </div>
+            <div class="en" style="display: none;">
+                <strong>How to control:</strong><br>
+                <span>Left Mouse Click</span> - Change fractal (Tree / Sierpinski)<br>
+                <span>UP/DOWN Arrows</span> - Change recursion depth<br>
+                <span>R</span> - Reset
+            </div>
         </div>
     </div>
 </div>
 
+<script src="../../js/script.js"></script>
 </body>
 </html>

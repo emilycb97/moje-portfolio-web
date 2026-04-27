@@ -9,19 +9,38 @@
 </head>
 <body class="subpage">
 
-<div class="container">
-    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
-    <h1>Projekt: Wyrzeźbiona czaszka</h1>
+<div class="container">
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
+
+    <h1>
+        <span class="pl">Projekt: Wyrzeźbiona czaszka</span>
+        <span class="en">Project: Sculpted skull</span>
+    </h1>
 
     <div class="description">
-        <p>Anatomiczne studium ludzkiej czaszki wykonane przy użyciu narzędzi do rzeźbienia (sculptingu) w programie <strong>Blender</strong>. Praca wymagała dogłębnej analizy bryły oraz wiernego odtworzenia skomplikowanej, twardej struktury kości. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
-        <a href="skull.blend" download class="btn-download">Pobierz model (.blend)</a>
+        <div class="pl">
+            <p>Anatomiczne studium ludzkiej czaszki wykonane przy użyciu narzędzi do rzeźbienia (sculptingu) w programie <strong>Blender</strong>. Praca wymagała dogłębnej analizy bryły oraz wiernego odtworzenia skomplikowanej, twardej struktury kości. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
+        </div>
+        <div class="en">
+            <p>An anatomical study of a human skull made using sculpting tools in <strong>Blender</strong>. The work required an in-depth analysis of the solid and a faithful reproduction of the complex, hard bone structure. Below is an interactive preview of the exported model in GLB format.</p>
+        </div>
+        <a href="skull.blend" download class="btn-download">
+            <span class="pl">Pobierz model (.blend)</span>
+            <span class="en">Download model (.blend)</span>
+        </a>
     </div>
 
     <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
 
-        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">⛶ Pełny ekran</button>
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">
+            <span class="pl">⛶ Pełny ekran</span>
+            <span class="en">⛶ Fullscreen</span>
+        </button>
 
         <model-viewer
                 src="skull.glb"

@@ -7,25 +7,46 @@
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-  <a href="../../index.html?page=projects" target="_top" class="btn-back">← Wróć do spisu projektów</a>
+  <a href="../../index.html?page=projects" target="_top" class="btn-back">
+    <span class="pl">← Wróć do spisu projektów</span>
+    <span class="en">← Back to projects</span>
+  </a>
 
-  <h1>Animowany Plakat: Stray Kids</h1>
+  <h1>
+    <span class="pl">Animowany plakat: Stray Kids</span>
+    <span class="en">Animated poster: Stray Kids</span>
+  </h1>
 
   <div class="description">
-    <p>Rozwinięcie poprzedniego projektu – ożywienie statycznego plakatu wektorowego. Animacja została w całości zrealizowana w programie <strong>Krita</strong>. Praca polegała na przygotowaniu klatek kluczowych, manipulacji warstwami (Motion Design) oraz dodaniu dynamiki, która idealnie pasuje do klimatu promującego wydarzenie muzyczne.</p>
-    <a href="skz.mp4" download class="btn-download">Pobierz wideo (MP4)</a>
-    <a href="straykids.kra" download class="btn-download">Pobierz projekt (KRA)</a>
+    <div class="pl">
+      <p>Rozwinięcie poprzedniego projektu – ożywienie statycznego plakatu wektorowego. Animacja została w całości zrealizowana w programie <strong>Krita</strong>. Praca polegała na przygotowaniu klatek kluczowych, manipulacji warstwami (Motion Design) oraz dodaniu dynamiki, która idealnie pasuje do klimatu promującego wydarzenie muzyczne.</p>
+    </div>
+    <div class="en">
+      <p>An extension of the previous project – bringing a static vector poster to life. The animation was entirely created in <strong>Krita</strong>. The work involved preparing keyframes, manipulating layers (Motion Design), and adding dynamics that perfectly match the atmosphere promoting a musical event.</p>
+    </div>
+
+    <a href="skz.mp4" download class="btn-download">
+      <span class="pl">Pobierz wideo (MP4)</span>
+      <span class="en">Download video (MP4)</span>
+    </a>
+    <a href="straykids.kra" download class="btn-download">
+      <span class="pl">Pobierz projekt (KRA)</span>
+      <span class="en">Download project (KRA)</span>
+    </a>
   </div>
 
   <div class="video-container">
     <video controls autoplay loop muted>
       <source src="skz.mp4" type="video/mp4">
-      Twoja przeglądarka nie obsługuje odtwarzacza wideo.
+      <span class="pl">Twoja przeglądarka nie obsługuje odtwarzacza wideo.</span>
+      <span class="en">Your browser does not support the video tag.</span>
     </video>
   </div>
 </div>
 
+<script src="../../js/script.js"></script>
 </body>
 </html>

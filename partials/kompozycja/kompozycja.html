@@ -6,39 +6,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
-<body class = "subpage">
+<body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
-    <h1>Warsztat Kompozycji</h1>
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
+
+    <h1>
+        <span class="pl">Warsztat kompozycji</span>
+        <span class="en">Composition Workshop</span>
+    </h1>
 
     <section class="project-section">
-        <h2>PROJEKT 1: Struktury na schemacie</h2>
+        <h2>
+            <span class="pl">PROJEKT 1: Struktury na schemacie</span>
+            <span class="en">PROJECT 1: Structures on a Grid</span>
+        </h2>
         <div class="description">
-            <p><b>Parametry techniczne:</b> Kwadratowy arkusz 20x20cm, rozdzielczość 300dpi, praca wyłącznie w skali szarości.</p>
-            <p>Celem projektu było zrealizowanie trzech zadań na ustalonym schemacie, zachowując stałe miejsca elementów:</p>
-            <ul>
-                <li><b>Zadanie 1:</b> Manipulacja schematem w taki sposób, aby odbiorca widział wyłącznie kwadraty.</li>
-                <li><b>Zadanie 2:</b> Wyodrębnienie i pokazanie 6 wyraźnych linii na schemacie.</li>
-                <li><b>Zadanie 3:</b> Wyodrębnienie i pokazanie 9 punktów na schemacie.</li>
-            </ul>
+            <div class="pl">
+                <p><b>Parametry techniczne:</b> Kwadratowy arkusz 20x20cm, rozdzielczość 300dpi, praca wyłącznie w skali szarości.</p>
+                <p>Celem projektu było zrealizowanie trzech zadań na ustalonym schemacie, zachowując stałe miejsca elementów:</p>
+                <ul>
+                    <li><b>Zadanie 1:</b> Manipulacja schematem w taki sposób, aby odbiorca widział wyłącznie kwadraty.</li>
+                    <li><b>Zadanie 2:</b> Wyodrębnienie i pokazanie 6 wyraźnych linii na schemacie.</li>
+                    <li><b>Zadanie 3:</b> Wyodrębnienie i pokazanie 9 punktów na schemacie.</li>
+                </ul>
+            </div>
+            <div class="en">
+                <p><b>Technical parameters:</b> Square sheet 20x20cm, 300dpi resolution, work exclusively in grayscale.</p>
+                <p>The goal of the project was to complete three tasks on a set grid, keeping the element positions fixed:</p>
+                <ul>
+                    <li><b>Task 1:</b> Manipulating the grid so that the viewer only sees squares.</li>
+                    <li><b>Task 2:</b> Extracting and highlighting 6 distinct lines on the grid.</li>
+                    <li><b>Task 3:</b> Extracting and highlighting 9 points on the grid.</li>
+                </ul>
+            </div>
         </div>
         <div class="gallery">
-            <img src="linie.png" alt="Struktura linii" onclick="openLightbox(0)">
-            <img src="kwadraty.png" alt="Struktura kwadratów" onclick="openLightbox(1)">
-            <img src="punkty.png" alt="Struktura punktów" onclick="openLightbox(2)">
+            <img src="kwadraty.png" alt="Zadanie 1" onclick="openLightbox(0)">
+            <img src="linie.png" alt="Zadanie 2" onclick="openLightbox(1)">
+            <img src="punkty.png" alt="Zadanie 3" onclick="openLightbox(2)">
         </div>
     </section>
 
     <section class="project-section">
-        <h2>PROJEKT 2: Cechy podobieństwa i uniwersalność</h2>
+        <h2>
+            <span class="pl">PROJEKT 2: Cechy podobieństwa i uniwersalność</span>
+            <span class="en">PROJECT 2: Features of Similarity and Universality</span>
+        </h2>
         <div class="description">
-            <p>Celem projektu było ukazanie cech podobieństwa w układach góra/dół oraz lewo/prawo. Prace musiały zachować uniwersalność interpretacji – kształty powinny być rozpoznawalne dla każdego odbiorcy.</p>
-            <ul>
-                <li><b>Wariant 1:</b> Wykorzystanie wyłącznie czarnych linii i domkniętych kształtów o stałej grubości konturu. Brak nachodzenia na siebie elementów dla zachowania ich jednoznaczności.</li>
-                <li><b>Wariant 2:</b> Wprowadzenie barw (z wykluczeniem czystej skali szarości) przy jednoczesnym usunięciu linii dzielących.</li>
-                <li><b>Wariant 3:</b> Całkowite wypełnienie płaszczyzny czarno-białymi teksturami przy usunięciu konturów linii.</li>
-            </ul>
+            <div class="pl">
+                <p>Celem projektu było ukazanie cech podobieństwa w układach góra/dół oraz lewo/prawo. Prace musiały zachować uniwersalność interpretacji – kształty powinny być rozpoznawalne dla każdego odbiorcy.</p>
+                <ul>
+                    <li><b>Wariant 1:</b> Wykorzystanie wyłącznie czarnych linii i domkniętych kształtów o stałej grubości konturu. Brak nachodzenia na siebie elementów dla zachowania ich jednoznaczności.</li>
+                    <li><b>Wariant 2:</b> Wprowadzenie barw (z wykluczeniem czystej skali szarości) przy jednoczesnym usunięciu linii dzielących.</li>
+                    <li><b>Wariant 3:</b> Całkowite wypełnienie płaszczyzny czarno-białymi teksturami przy usunięciu konturów linii.</li>
+                </ul>
+            </div>
+            <div class="en">
+                <p>The goal of the project was to show the features of similarity in top/bottom and left/right layouts. The works had to maintain universality of interpretation – the shapes should be recognizable to every viewer.</p>
+                <ul>
+                    <li><b>Variant 1:</b> Using exclusively black lines and closed shapes with a constant outline thickness. No overlapping of elements to maintain their clarity.</li>
+                    <li><b>Variant 2:</b> Introduction of colors (excluding pure grayscale) while simultaneously removing dividing lines.</li>
+                    <li><b>Variant 3:</b> Completely filling the plane with black-and-white textures while removing line contours.</li>
+                </ul>
+            </div>
         </div>
         <div class="gallery">
             <img src="project2 - 1.png" alt="Kontur" onclick="openLightbox(3)">
@@ -48,10 +83,19 @@
     </section>
 
     <section class="project-section">
-        <h2>PROJEKT 3: Dwie maksymalnie różne kompozycje</h2>
+        <h2>
+            <span class="pl">PROJEKT 3: Dwie maksymalnie różne kompozycje</span>
+            <span class="en">PROJECT 3: Two Maximally Different Compositions</span>
+        </h2>
         <div class="description">
-            <p>Zadanie polegało na stworzeniu dwóch kontrastujących ze sobą kompozycji na formatach odpowiadających kartce A4, przy zachowaniu tej samej orientacji obu arkuszy.</p>
-            <p><b>Zasady:</b> Wykorzystanie tego samego kształtu o identycznym rozmiarze, powtórzonego dokładnie 4 razy. Elementy mogą się stykać punktowo, ale nie mogą na siebie nachodzić ani wychodzić poza krawędź płaszczyzny (canvas).</p>
+            <div class="pl">
+                <p>Zadanie polegało na stworzeniu dwóch kontrastujących ze sobą kompozycji na formatach odpowiadających kartce A4, przy zachowaniu tej samej orientacji obu arkuszy.</p>
+                <p><b>Zasady:</b> Wykorzystanie tego samego kształtu o identycznym rozmiarze, powtórzonego dokładnie 4 razy. Elementy mogą się stykać punktowo, ale nie mogą na siebie nachodzić ani wychodzić poza krawędź płaszczyzny (canvas).</p>
+            </div>
+            <div class="en">
+                <p>The task was to create two contrasting compositions on formats corresponding to an A4 sheet, while maintaining the same orientation for both sheets.</p>
+                <p><b>Rules:</b> Using the exact same shape of identical size, repeated exactly 4 times. Elements can touch at points, but they cannot overlap or go beyond the edge of the plane (canvas).</p>
+            </div>
         </div>
         <div class="gallery">
             <img src="project3 -1.png" alt="Osobne płaszczyzny" onclick="openLightbox(6)">
@@ -60,13 +104,25 @@
     </section>
 
     <section class="project-section">
-        <h2>PROJEKT 4: Relacje układów i funkcjonalność</h2>
+        <h2>
+            <span class="pl">PROJEKT 4: Relacje układów i funkcjonalność</span>
+            <span class="en">PROJECT 4: Layout Relations and Functionality</span>
+        </h2>
         <div class="description">
-            <p>Stworzenie jednej kompozycji na wspólnej płaszczyźnie, zawierającej dwa maksymalnie różne układy. Rozróżnienie układów opiera się na analizie liczebności, wyglądu (rozmiar, kolor, kształt) oraz relacji elementów względem siebie i płaszczyzny.</p>
-            <ul>
-                <li><b>Aspekty analizy:</b> Struktura (powiązania przestrzenne) oraz funkcjonalność (różnica między wyglądem a działaniem elementu).</li>
-                <li><b>Relacje:</b> Relacja przynależności (cechy wspólne zbioru) oraz relacje porządkujące (wyraźna hierarchia i powiązania między wybranymi elementami).</li>
-            </ul>
+            <div class="pl">
+                <p>Stworzenie jednej kompozycji na wspólnej płaszczyźnie, zawierającej dwa maksymalnie różne układy. Rozróżnienie układów opiera się na analizie liczebności, wyglądu (rozmiar, kolor, kształt) oraz relacji elementów względem siebie i płaszczyzny.</p>
+                <ul>
+                    <li><b>Aspekty analizy:</b> Struktura (powiązania przestrzenne) oraz funkcjonalność (różnica między wyglądem a działaniem elementu).</li>
+                    <li><b>Relacje:</b> Relacja przynależności (cechy wspólne zbioru) oraz relacje porządkujące (wyraźna hierarchia i powiązania między wybranymi elementami).</li>
+                </ul>
+            </div>
+            <div class="en">
+                <p>Creating a single composition on a common plane, containing two maximally different layouts. The distinction between layouts is based on the analysis of quantity, appearance (size, color, shape), and the relationship of elements to each other and the plane.</p>
+                <ul>
+                    <li><b>Analysis aspects:</b> Structure (spatial connections) and functionality (the difference between the appearance and function of an element).</li>
+                    <li><b>Relations:</b> Membership relation (common features of a set) and ordering relations (clear hierarchy and connections between selected elements).</li>
+                </ul>
+            </div>
         </div>
         <div class="gallery">
             <img src="project4 - 1.png" alt="Sygnet CH" onclick="openLightbox(8)">
@@ -77,10 +133,12 @@
 </div>
 
 <div id="lightbox">
-    <span class="close" onclick="closeLightbox()">&times;</span>
-    <button class="arrow prev" onclick="changeImage(-1)">&#10094;</button>
+    <span class="close-btn" onclick="closeLightbox()">×</span>
     <img id="lightbox-img" src="" alt="">
-    <button class="arrow next" onclick="changeImage(1)">&#10095;</button>
+    <div class="nav-controls">
+        <button class="arrow prev" onclick="changeImage(-1)">❮</button>
+        <button class="arrow next" onclick="changeImage(1)">❯</button>
+    </div>
 </div>
 
 <script src="../../js/script.js"></script>

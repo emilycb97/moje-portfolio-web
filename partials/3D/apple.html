@@ -8,15 +8,31 @@
 </head>
 <body class = "subpage">
 
-<div class="container">
-    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
-    <h1>Projekt: Wyrzeźbione jabłko</h1>
+<div class="container">
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
+
+    <h1>
+        <span class="pl">Projekt: Wyrzeźbione jabłko</span>
+        <span class="en">Project: Sculpted apple</span>
+    </h1>
 
     <div class="description">
-        <p>Projekt przedstawia cyfrowy model jabłka wykonany w programie <strong>ZBrush</strong>. Głównym założeniem było stworzenie realistycznie wyglądającego owocu z zachowaniem naturalnych i asymetrycznych kształtów. Skupiłam się na rzeźbieniu drobnych detali powierzchni (takich jak wgniecenia przy ogonku) oraz na nałożeniu podstawowych kolorów (Polypaint). Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu 3D.</p>
+        <div class="pl">
+            <p>Projekt przedstawia cyfrowy model jabłka wykonany w programie <strong>ZBrush</strong>. Głównym założeniem było stworzenie realistycznie wyglądającego owocu z zachowaniem naturalnych i asymetrycznych kształtów. Skupiłam się na rzeźbieniu drobnych detali powierzchni (takich jak wgniecenia przy ogonku) oraz na nałożeniu podstawowych kolorów (Polypaint). Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu 3D.</p>
+        </div>
+        <div class="en">
+            <p>The project presents a digital model of an apple created in <strong>ZBrush</strong>. The main goal was to create a realistic-looking fruit while maintaining natural and asymmetrical shapes. I focused on sculpting fine surface details (such as dents near the stem) and applying basic colors (Polypaint). Below is an interactive preview of the exported 3D model.</p>
+        </div>
 
-        <a href="apple.ZPR" download class="btn-download">Pobierz plik ZBrush Project (.ZPR)</a>
+        <a href="apple.ZPR" download class="btn-download">
+            <span class="pl">Pobierz plik ZBrush Project (.ZPR)</span>
+            <span class="en">Download ZBrush Project file (.ZPR)</span>
+        </a>
     </div>
 
     <div class="sketchfab-embed-wrapper">
@@ -30,5 +46,6 @@
     </div>
 </div>
 
+<script src="../../js/script.js"></script>
 </body>
 </html>

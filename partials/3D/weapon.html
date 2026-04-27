@@ -9,20 +9,39 @@
 </head>
 <body class="subpage">
 
-<div class="container">
-    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
-    <h1>Projekt: Broń Kinich'a (Genshin Impact)</h1>
+<div class="container">
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
+
+    <h1>
+        <span class="pl">Projekt: Broń Kinich'a (Genshin Impact)</span>
+        <span class="en">Project: Kinich's weapon (Genshin Impact)</span>
+    </h1>
 
     <div class="description">
-        <p>Model 3D typu high-poly ze świata gry Genshin Impact. Projekt został wymodelowany i zoptymalizowany w programie <strong>Blender</strong>. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
-        <a href="weapon.glb" download class="btn-download">Pobierz model (.GLB)</a>
+        <div class="pl">
+            <p>Model 3D typu high-poly ze świata gry Genshin Impact. Projekt został wymodelowany i zoptymalizowany w programie <strong>Blender</strong>. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
+        </div>
+        <div class="en">
+            <p>A high-poly 3D model from the world of Genshin Impact. The project was modeled and optimized in <strong>Blender</strong>. Below is an interactive preview of the exported model in GLB format.</p>
+        </div>
+        <a href="weapon.glb" download class="btn-download">
+            <span class="pl">Pobierz model (.GLB)</span>
+            <span class="en">Download model (.GLB)</span>
+        </a>
     </div>
 
 
     <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
 
-        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">⛶ Pełny ekran</button>
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">
+            <span class="pl">⛶ Pełny ekran</span>
+            <span class="en">⛶ Fullscreen</span>
+        </button>
 
         <model-viewer
                 src="weapon.glb"

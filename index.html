@@ -11,20 +11,36 @@
 </head>
 <body>
 
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+
 <header class="hero">
     <div class="profile-pic">
         <img src="assets/czarno .jpg" alt="Zdjęcie profilowe Emilii">
     </div>
     <div class="hero-text">
-        <h1>Cześć, jestem <span class="highlight">Emilia</span></h1>
-        <p>Łączę świat IT z grafiką komputerową i modelowaniem 3D.</p>
+        <h1>
+            <span class="pl">Cześć, jestem</span>
+            <span class="en">Hi, I'm</span>
+            <span class="highlight">Emilia</span>
+        </h1>
+        <p class="pl">Łączę świat IT z grafiką komputerową i modelowaniem 3D.</p>
+        <p class="en">I connect the IT world with computer graphics and 3D modeling.</p>
     </div>
 </header>
 
 <nav class="navbar">
-    <button class="nav-btn active" onclick="showSection(event, 'about')">O mnie</button>
-    <button class="nav-btn" onclick="showSection(event, 'projects')">Projekty</button>
-    <button class="nav-btn" onclick="showSection(event, 'contact')">Kontakt</button>
+    <button class="nav-btn active" onclick="showSection(event, 'about')">
+        <span class="pl">O mnie</span>
+        <span class="en">About me</span>
+    </button>
+    <button class="nav-btn" onclick="showSection(event, 'projects')">
+        <span class="pl">Projekty</span>
+        <span class="en">Projects</span>
+    </button>
+    <button class="nav-btn" onclick="showSection(event, 'contact')">
+        <span class="pl">Kontakt</span>
+        <span class="en">Contact</span>
+    </button>
 </nav>
 
 <link rel="stylesheet" href="css/style.css">

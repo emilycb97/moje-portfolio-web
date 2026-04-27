@@ -7,20 +7,37 @@
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body class="subpage">
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
 
 <div class="container">
-  <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+  <a href="../../index.html?page=projects" class="btn-back">
+    <span class="pl">← Wróć do spisu projektów</span>
+    <span class="en">← Back to projects</span>
+  </a>
 
-  <h1>Ilustracja Wektorowa: Noc Halloween</h1>
+  <h1>
+    <span class="pl">Ilustracja wektorowa: Noc halloween</span>
+    <span class="en">Vector illustration: Halloween night</span>
+  </h1>
 
   <div class="description">
-    <p>Klimatyczna ilustracja wektorowa wygenerowana natywnie w formacie <strong>SVG</strong>. Praca opiera się na kodowaniu ścieżek, kształtów oraz gradientów bezpośrednio w standardzie znaczników XML, co zapewnia bezstratną jakość i możliwość nieskończonego skalowania grafiki.</p>
-    <a href="halloween.svg" download class="btn-download">Pobierz ilustrację (.SVG)</a>
+    <div class="pl">
+      <p>Klimatyczna ilustracja wektorowa wygenerowana natywnie w formacie <strong>SVG</strong>. Praca opiera się na kodowaniu ścieżek, kształtów oraz gradientów bezpośrednio w standardzie znaczników XML, co zapewnia bezstratną jakość i możliwość nieskończonego skalowania grafiki.</p>
+    </div>
+    <div class="en">
+      <p>An atmospheric vector illustration generated natively in <strong>SVG</strong> format. The work is based on coding paths, shapes, and gradients directly within the XML markup standard, ensuring lossless quality and the ability to infinitely scale the graphic.</p>
+    </div>
+    <a href="halloween.svg" download class="btn-download">
+      <span class="pl">Pobierz ilustrację (.SVG)</span>
+      <span class="en">Download illustration (.SVG)</span>
+    </a>
   </div>
 
   <div class="gallery">
     <img src="halloween.svg" alt="Ilustracja Noc Halloween" onclick="openLightbox(0)">
   </div>
+</div>
+
 </div>
 
 <div id="lightbox">
