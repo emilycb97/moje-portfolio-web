@@ -19,7 +19,10 @@
         <a href="skull.blend" download class="btn-download">Pobierz model (.blend)</a>
     </div>
 
-    <div class="sketchfab-embed-wrapper" style="height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+    <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">⛶ Pełny ekran</button>
+
         <model-viewer
                 src="skull.glb"
                 alt="Model czaszki"
