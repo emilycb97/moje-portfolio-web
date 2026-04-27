@@ -307,6 +307,17 @@ main {
     color: var(--bg-dark);
 }
 
+.cv-download {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cv-download .btn {
+    margin-top: 0;
+}
+
 .project-section {
     margin-bottom: 80px;
 }
@@ -428,13 +439,41 @@ main {
     color: white;
 }
 
+/* --- Przycisk pełnego ekranu dla modeli 3D --- */
+.fullscreen-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(5, 5, 5, 0.8);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10;
+    font-family: 'Oxanium', sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+    backdrop-filter: blur(4px);/
+}
+
+.fullscreen-btn:hover {
+    background-color: var(--accent-green);
+    color: var(--bg-dark);
+}
 
 .sketchfab-embed-wrapper {
     margin-top: 30px;
     width: 100%;
 }
 
-.sketchfab-embed-wrapper iframe { width: 100%; height: 600px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.sketchfab-embed-wrapper iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
 .sketchfab-embed-wrapper p { text-align: center; margin-top: 10px !important; }
 
 .pdf-viewer { width: 100%; height: 800px; border: 1px solid #333; border-radius: 8px; margin-top: 30px; background-color: #1a1a1a; }

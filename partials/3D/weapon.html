@@ -15,11 +15,15 @@
     <h1>Projekt: Broń Kinich'a (Genshin Impact)</h1>
 
     <div class="description">
-        <p>Model 3D typu high-poly ze świata gry Genshin Impact. Projekt został wyrzeźbiony i zoptymalizowany w programie <strong>Blender</strong>. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
+        <p>Model 3D typu high-poly ze świata gry Genshin Impact. Projekt został wymodelowany i zoptymalizowany w programie <strong>Blender</strong>. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
         <a href="weapon.glb" download class="btn-download">Pobierz model (.GLB)</a>
     </div>
 
-    <div class="sketchfab-embed-wrapper" style="height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+
+    <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">⛶ Pełny ekran</button>
+
         <model-viewer
                 src="weapon.glb"
                 alt="Model 3D broni"

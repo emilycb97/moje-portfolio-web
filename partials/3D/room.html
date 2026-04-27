@@ -2,43 +2,46 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <style>
-        body { margin: 0; background-color: #050505; height: 100vh; overflow: hidden; }
-
-        model-viewer {
-            width: 100%;
-            height: 100%;
-            --poster-color: transparent;
-        }
-
-        .ar-button {
-            background-color: #00ff66;
-            border-radius: 4px;
-            border: none;
-            position: absolute;
-            bottom: 16px;
-            right: 16px;
-            padding: 10px 20px;
-            color: #050505;
-            font-family: 'Oxanium', sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            z-index: 100;
-        }
-    </style>
+    <title>Pokój 2 Kids Room 2025 (3D) - Emilia Szczerba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
-<body>
+<body class="subpage">
 
-<model-viewer
-        src="room.glb"
-        alt="Model 3D pokoju"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="0.4"
-        style="width: 100%; height: 100%;">
-</model-viewer>
+<div class="container">
+    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+
+    <h1>Projekt: Pokój (Inspiracja Stray Kids)</h1>
+
+    <div class="description">
+        <p>Projekt wnętrza będący cyfrową interpretacją scenografii z programu <strong>"2 Kids Room 2025"</strong> grupy Stray Kids. Model został wykonany w programie <strong>Blender</strong> z dużą dbałością o detale wyposażenia oraz specyficzny klimat oświetleniowy, który nadaje pomieszczeniu intymny i nowoczesny charakter. Praca nad projektem obejmowała modelowanie mebli, teksturowanie oraz ustawienie renderu w czasie rzeczywistym.</p>
+
+        <p style="color: #888; font-size: 0.85rem; font-style: italic; margin-top: 10px;">
+            ⚠️ Uwaga: Ze względu na dużą liczbę tekstur wysokiej rozdzielczości, model może ładować się nieco dłużej.
+        </p>
+
+        <a href="room.glb" download class="btn-download">Pobierz model (.GLB)</a>
+    </div>
+
+    <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">⛶ Pełny ekran</button>
+
+        <model-viewer
+                src="room.glb"
+                loading="lazy"
+                alt="Model 3D pokoju 2 Kids Room"
+                camera-controls
+                auto-rotate
+                shadow-intensity="1.5"
+                exposure="0.6"
+                style="width: 100%; height: 100%;">
+        </model-viewer>
+    </div>
+</div>
+
+<script src="../../js/script.js"></script>
 
 </body>
 </html>
