@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekty z Kompozycji - Emilia Szczerba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class = "subpage">
+
+<div class="container">
+    <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+    <h1>Warsztat Kompozycji</h1>
+
+    <section class="project-section">
+        <h2>PROJEKT 1: Struktury na schemacie</h2>
+        <div class="description">
+            <p><b>Parametry techniczne:</b> Kwadratowy arkusz 20x20cm, rozdzielczość 300dpi, praca wyłącznie w skali szarości.</p>
+            <p>Celem projektu było zrealizowanie trzech zadań na ustalonym schemacie, zachowując stałe miejsca elementów:</p>
+            <ul>
+                <li><b>Zadanie 1:</b> Manipulacja schematem w taki sposób, aby odbiorca widział wyłącznie kwadraty.</li>
+                <li><b>Zadanie 2:</b> Wyodrębnienie i pokazanie 6 wyraźnych linii na schemacie.</li>
+                <li><b>Zadanie 3:</b> Wyodrębnienie i pokazanie 9 punktów na schemacie.</li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <img src="linie.png" alt="Struktura linii" onclick="openLightbox(0)">
+            <img src="kwadraty.png" alt="Struktura kwadratów" onclick="openLightbox(1)">
+            <img src="punkty.png" alt="Struktura punktów" onclick="openLightbox(2)">
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>PROJEKT 2: Cechy podobieństwa i uniwersalność</h2>
+        <div class="description">
+            <p>Celem projektu było ukazanie cech podobieństwa w układach góra/dół oraz lewo/prawo. Prace musiały zachować uniwersalność interpretacji – kształty powinny być rozpoznawalne dla każdego odbiorcy.</p>
+            <ul>
+                <li><b>Wariant 1:</b> Wykorzystanie wyłącznie czarnych linii i domkniętych kształtów o stałej grubości konturu. Brak nachodzenia na siebie elementów dla zachowania ich jednoznaczności.</li>
+                <li><b>Wariant 2:</b> Wprowadzenie barw (z wykluczeniem czystej skali szarości) przy jednoczesnym usunięciu linii dzielących.</li>
+                <li><b>Wariant 3:</b> Całkowite wypełnienie płaszczyzny czarno-białymi teksturami przy usunięciu konturów linii.</li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <img src="project2 - 1.png" alt="Kontur" onclick="openLightbox(3)">
+            <img src="project2 - 2.png" alt="Kolor" onclick="openLightbox(4)">
+            <img src="project2 - 3.png" alt="Tekstura" onclick="openLightbox(5)">
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>PROJEKT 3: Dwie maksymalnie różne kompozycje</h2>
+        <div class="description">
+            <p>Zadanie polegało na stworzeniu dwóch kontrastujących ze sobą kompozycji na formatach odpowiadających kartce A4, przy zachowaniu tej samej orientacji obu arkuszy.</p>
+            <p><b>Zasady:</b> Wykorzystanie tego samego kształtu o identycznym rozmiarze, powtórzonego dokładnie 4 razy. Elementy mogą się stykać punktowo, ale nie mogą na siebie nachodzić ani wychodzić poza krawędź płaszczyzny (canvas).</p>
+        </div>
+        <div class="gallery">
+            <img src="project3 -1.png" alt="Osobne płaszczyzny" onclick="openLightbox(6)">
+            <img src="project3 - 2.png" alt="Złożona kompozycja" onclick="openLightbox(7)">
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>PROJEKT 4: Relacje układów i funkcjonalność</h2>
+        <div class="description">
+            <p>Stworzenie jednej kompozycji na wspólnej płaszczyźnie, zawierającej dwa maksymalnie różne układy. Rozróżnienie układów opiera się na analizie liczebności, wyglądu (rozmiar, kolor, kształt) oraz relacji elementów względem siebie i płaszczyzny.</p>
+            <ul>
+                <li><b>Aspekty analizy:</b> Struktura (powiązania przestrzenne) oraz funkcjonalność (różnica między wyglądem a działaniem elementu).</li>
+                <li><b>Relacje:</b> Relacja przynależności (cechy wspólne zbioru) oraz relacje porządkujące (wyraźna hierarchia i powiązania między wybranymi elementami).</li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <img src="project4 - 1.png" alt="Sygnet CH" onclick="openLightbox(8)">
+            <img src="project4 -2.png" alt="Wzór krzyży" onclick="openLightbox(9)">
+            <img src="project4 - 3.png" alt="Wzór ozdobny" onclick="openLightbox(10)">
+        </div>
+    </section>
+</div>
+
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button class="arrow prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="arrow next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>

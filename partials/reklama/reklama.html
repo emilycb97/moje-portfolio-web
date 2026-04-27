@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Projekty Reklamowe - Emilia Szczerba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="subpage">
+
+<div class="container">
+    <a href="../../index.html?page=projects" target="_top" class="btn-back">← Wróć do spisu projektów</a>
+
+    <h1>Projekty Reklamowe - Emilia Szczerba</h1>
+
+    <div class="description">
+        <p>Głównym założeniem projektu było stworzenie spójnych materiałów promocyjnych dla wybranej jednostki. Praca wymagała nie tylko zmysłu estetycznego w komponowaniu informacji, ale przede wszystkim ścisłego przestrzegania zasad DTP i przygotowania plików do druku wielko- i małoformatowego. Całość została zrealizowana przy użyciu <strong>Adobe Express</strong>.</p>
+        <p>Reklama przedstawia współpracę Bang Chan'a (lidera Stray Kids) z Chrome Hearts.</p>
+    </div>
+
+    <div class="project-section">
+        <h2>1. Ulotka składana (3xDL)</h2>
+        <div class="description">
+            <span class="tech-info">Format: A4 (297x210 mm) rozłożona / 3xDL (99x210 mm) złożona | Spad: 10 mm | Margines wewnętrzny: 10 mm</span>
+            Projekt dwustronnej ulotki składanej (tzw. trifold). Wyzwaniem w tym zadaniu było zaplanowanie układu typograficznego i graficznego tak, aby informacje były czytelne po złożeniu ulotki w "harmonijkę". Projekt wymagał rygorystycznego zachowania wymiarów, wewnętrznych marginesów bezpieczeństwa oraz spadów niezbędnych w procesie introligatorskim.
+        <br>
+            <a href="ulotka-Emilia_Szczerba.pdf" download class="btn-download">Pobierz ulotkę (PDF)</a>
+        </div>
+        <div class="gallery">
+            <img src="ulotka-1.PNG" alt="Ulotka - strona 1" onclick="openLightbox(0)">
+            <img src="ulotka-2.PNG" alt="Ulotka - strona 2" onclick="openLightbox(1)">
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>2. Baner Wielkoformatowy</h2>
+        <div class="description">
+            <span class="tech-info">Format: 2000x1000 mm | Spad: 20 mm | Margines wewnętrzny: 50 mm</span>
+            Projekt baneru reklamowego przeznaczonego do ekspozycji na zewnątrz. Skala 2:1 wymagała odpowiedniego skalowania grafik oraz zastosowania znacznie większych marginesów bezpieczeństwa (50 mm), aby żaden istotny tekst nie został ucięty lub zasłonięty przez oczka montażowe. Dodatkowo uwzględniono 20 mm spadów z każdej strony.
+        <br>
+            <a href="baner-Emilia_Szczerba.pdf" download class="btn-download">Pobierz baner (PDF)</a>
+        </div>
+        <div class="gallery">
+            <img src="baner.png" alt="Baner reklamowy" onclick="openLightbox(2)">
+        </div>
+    </div>
+</div>
+
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <button class="arrow prev" onclick="changeImage(-1)">&#10094;</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="arrow next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>

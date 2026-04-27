@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Plakat Wydarzenia - Projekt Wektorowy - Emilia Szczerba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="subpage">
+
+<div class="container">
+  <a href="../../index.html?page=projects" target="_top" class="btn-back">← Wróć do spisu projektów</a>
+
+  <h1>Plakat Wydarzenia: Stray Kids</h1>
+
+  <div class="description">
+    <p>Mój autorski projekt plakatu promujący koncert Stray Kids w Amsterdamie. Celem było stworzenie czytelnej i estetycznej identyfikacji wizualnej, która przyciągnie uwagę. Plakat został zaprojektowany w całości w programie Inkscape jako grafika wektorowa, co gwarantuje najwyższą jakość wydruku w dowolnym formacie.</p>
+    <a href="plakatSKZ.pdf" download class="btn-download">Pobierz plakat (PDF)</a>
+  </div>
+
+  <div class="gallery">
+    <img src="plakatSKZ.png" alt="Projekt plakatu wektorowego" onclick="openLightbox(0)">
+  </div>
+</div>
+
+<div id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <button class="arrow prev" onclick="changeImage(-1)">&#10094;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="arrow next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>

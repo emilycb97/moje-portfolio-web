@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Noc Halloween (SVG) - Emilia Szczerba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="subpage">
+
+<div class="container">
+  <a href="../../index.html?page=projects" class="btn-back">← Wróć do spisu projektów</a>
+
+  <h1>Ilustracja Wektorowa: Noc Halloween</h1>
+
+  <div class="description">
+    <p>Klimatyczna ilustracja wektorowa wygenerowana natywnie w formacie <strong>SVG</strong>. Praca opiera się na kodowaniu ścieżek, kształtów oraz gradientów bezpośrednio w standardzie znaczników XML, co zapewnia bezstratną jakość i możliwość nieskończonego skalowania grafiki.</p>
+    <a href="halloween.svg" download class="btn-download">Pobierz ilustrację (.SVG)</a>
+  </div>
+
+  <div class="gallery">
+    <img src="halloween.svg" alt="Ilustracja Noc Halloween" onclick="openLightbox(0)">
+  </div>
+</div>
+
+<div id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <button class="arrow prev" onclick="changeImage(-1)">&#10094;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="arrow next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+
+<script src="../../js/script.js"></script>
+</body>
+</html>
