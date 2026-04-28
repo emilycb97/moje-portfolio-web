@@ -633,3 +633,104 @@ body.lang-en .en {
 body.lang-en span.en {
     display: inline;
 }
+
+
+.gallery.pixel-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+}
+
+h3:first-of-type + .gallery.pixel-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 800px !important;
+}
+
+.gallery.pixel-grid img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: contain !important;
+    background-color: #1a1a24 !important;
+    border: 1px solid #333 !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    image-rendering: pixelated !important;
+    transform: none !important;
+}
+
+.gallery.pixel-grid img:hover {
+    transform: translateY(-8px) !important;
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+    background-color: #232330 !important;
+}
+
+.subpage h3 {
+    margin-top: 60px !important;
+    margin-bottom: 15px !important;
+    padding-bottom: 10px !important;
+    border-bottom: 2px solid #2a2a35 !important;
+    font-size: 1.4em !important;
+    color: #ffffff !important;
+}
+
+.subpage p.pl, .subpage p.en {
+    color: #a0a0b0 !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+    font-size: 0.95em !important;
+}
+
+/* --- SIATKA MODELI 3D (np. CookMeBack) --- */
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.model-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.model-card:hover {
+    border-color: var(--accent-green);
+    box-shadow: 0 10px 20px rgba(0, 255, 102, 0.1);
+    transform: translateY(-5px);
+}
+
+.model-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+}
+
+.model-wrapper {
+    position: relative !important;
+    height: 300px !important;
+    background-color: #1a1a24;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #222;
+}
+
+.model-wrapper model-viewer {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}

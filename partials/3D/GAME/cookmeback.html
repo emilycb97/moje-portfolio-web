@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Assets - CookMeBack - Emilia Szczerba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body class="subpage">
+
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+
+<div class="container">
+    <a href="../../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
+
+    <h1>
+        <span class="pl">Modele do gry CookMeBack (ZTGK)</span>
+        <span class="en">3D Models for CookMeBack Game (ZTGK)</span>
+    </h1>
+
+    <div class="description">
+        <div class="pl">
+            <p>Zestaw modeli 3D w konwencji "cozy restaurant" stworzonych na potrzeby autorskiej gry wideo <strong>CookMeBack</strong>. Projekt jest aktualnie rozwijany w ramach 6. semestru przez 6-osobowy zespół studencki (jako projekt zaliczeniowy z kilku przedmiotów oraz na konkurs ZTGK).</p>
+            <p><strong>Wszystkie zaprezentowane poniżej modele zostały wykonane od podstaw przeze mnie w programie Blender.</strong> Do interakcji z modelami użyj myszki (obracanie, przybliżanie).</p>
+        </div>
+        <div class="en">
+            <p>A set of 3D models in a "cozy restaurant" theme created for the original video game <strong>CookMeBack</strong>. The project is currently being developed during the 6th semester by a 6-person student team (as a final project for several courses and for the ZTGK competition).</p>
+            <p><strong>All of the models presented below were created from scratch entirely by me in Blender.</strong> Use your mouse to interact with the models (rotate, zoom).</p>
+        </div>
+    </div>
+
+    <div class="models-grid">
+        <div class="model-card">
+            <h3>
+                <span class="pl">Garnek, patelnia i deska</span>
+                <span class="en">Pot, pan, and cutting board</span>
+            </h3>
+            <div id="model-1" class="model-wrapper sketchfab-embed-wrapper">
+                <button class="fullscreen-btn" onclick="toggleFullscreen('model-1')">
+                    <span class="pl">⛶ Pełny ekran</span>
+                    <span class="en">⛶ Fullscreen</span>
+                </button>
+                <model-viewer src="garnek.glb" loading="lazy" alt="Model garnka, patelni i deski" camera-controls auto-rotate shadow-intensity="1" exposure="1"></model-viewer>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <h3>
+                <span class="pl">Ziemniaki</span>
+                <span class="en">Potatoes</span>
+            </h3>
+            <div id="model-3" class="model-wrapper sketchfab-embed-wrapper">
+                <button class="fullscreen-btn" onclick="toggleFullscreen('model-3')">
+                    <span class="pl">⛶ Pełny ekran</span>
+                    <span class="en">⛶ Fullscreen</span>
+                </button>
+                <model-viewer src="potatos.glb" loading="lazy" alt="Model ziemniaków" camera-controls auto-rotate shadow-intensity="1" exposure="1"></model-viewer>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <h3>
+                <span class="pl">Miska</span>
+                <span class="en">Bowl</span>
+            </h3>
+            <div id="model-4" class="model-wrapper sketchfab-embed-wrapper">
+                <button class="fullscreen-btn" onclick="toggleFullscreen('model-4')">
+                    <span class="pl">⛶ Pełny ekran</span>
+                    <span class="en">⛶ Fullscreen</span>
+                </button>
+                <model-viewer src="bowl.glb" loading="lazy" alt="Model miski" camera-controls auto-rotate shadow-intensity="1" exposure="1"></model-viewer>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <h3>
+                <span class="pl">Głęboki talerz</span>
+                <span class="en">Deep plate</span>
+            </h3>
+            <div id="model-5" class="model-wrapper sketchfab-embed-wrapper">
+                <button class="fullscreen-btn" onclick="toggleFullscreen('model-5')">
+                    <span class="pl">⛶ Pełny ekran</span>
+                    <span class="en">⛶ Fullscreen</span>
+                </button>
+                <model-viewer src="deep_plate.glb" loading="lazy" alt="Model głębokiego talerza" camera-controls auto-rotate shadow-intensity="1" exposure="1"></model-viewer>
+            </div>
+        </div>
+
+        <div class="model-card">
+            <h3>
+                <span class="pl">Płaski talerz</span>
+                <span class="en">Flat plate</span>
+            </h3>
+            <div id="model-6" class="model-wrapper sketchfab-embed-wrapper">
+                <button class="fullscreen-btn" onclick="toggleFullscreen('model-6')">
+                    <span class="pl">⛶ Pełny ekran</span>
+                    <span class="en">⛶ Fullscreen</span>
+                </button>
+                <model-viewer src="plate-done.glb" loading="lazy" alt="Model talerza" camera-controls auto-rotate shadow-intensity="1" exposure="1"></model-viewer>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../../../js/script.js"></script>
+
+</body>
+</html>
