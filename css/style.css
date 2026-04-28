@@ -734,3 +734,29 @@ h3:first-of-type + .gallery.pixel-grid {
     height: 100%;
     outline: none;
 }
+
+/* --- Sekcja O Mnie --- */
+.about-content {
+    margin-top: 20px;
+    max-width: 850px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+.about-content li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    text-align: justify;
+}
+
+.about-content li strong {
+    color: var(--text-light);
+}
