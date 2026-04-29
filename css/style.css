@@ -172,6 +172,25 @@ main {
     color: var(--bg-dark);
 }
 
+/* --- Stopka (Footer) --- */
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 8px var(--accent-green));
+}
+
 .main-footer {
     background-color: var(--bg-dark);
     width: 100%;
@@ -183,14 +202,6 @@ main {
     background-color: var(--accent-green);
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
-}
-
-.footer-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .footer-content p {
@@ -759,19 +770,4 @@ h3:first-of-type + .gallery.pixel-grid {
 
 .about-content li strong {
     color: var(--text-light);
-}
-
-/* --- Stopka (Footer) --- */
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 15px;
-}
-
-.footer-logo {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
 }
