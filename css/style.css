@@ -23,6 +23,20 @@ body.subpage {
     padding: 40px 20px;
 }
 
+
+a {
+    color: var(--accent-green);
+    text-decoration-color: var(--accent-green);
+    text-underline-offset: 4px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--text-light);
+    text-decoration-color: var(--text-light);
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -490,6 +504,21 @@ main {
 .pdf-viewer { width: 100%; height: 800px; border: 1px solid #333; border-radius: 8px; margin-top: 30px; background-color: #1a1a1a; }
 @media (max-width: 768px) { .pdf-viewer { height: 500px; } }
 
+
+@media (max-width: 600px) {
+    .navbar {
+        gap: 0.5rem;
+        padding: 1rem 0;
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        letter-spacing: 1px;
+    }
+}
+
 .canvas-container { margin-top: 40px; text-align: center; background-color: #111; padding: 20px; border-radius: 8px; border: 1px solid #222; }
 canvas { border: 2px solid var(--accent-green); border-radius: 4px; outline: none; max-width: 100%; box-shadow: 0 0 20px rgba(0, 255, 102, 0.1); }
 .controls-info { color: #aaa; font-size: 0.85rem; margin-top: 15px; text-align: left; display: inline-block; }
@@ -770,4 +799,11 @@ h3:first-of-type + .gallery.pixel-grid {
 
 .about-content li strong {
     color: var(--text-light);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 25px;
+    line-height: 1.8;
 }

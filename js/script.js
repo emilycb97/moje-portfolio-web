@@ -223,3 +223,35 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.innerText = 'PL';
     }
 });
+
+// ==========================================
+// PRZYWRACANIE POZYCJI SCROLLA (UX)
+// ==========================================
+
+// 1. Zapisujemy pozycję scrolla w momencie kliknięcia w projekt
+document.addEventListener('click', function(e) {
+    // Sprawdzamy, czy kliknięty element znajduje się wewnątrz linku do projektu
+    if (e.target.closest('.card-link')) {
+        sessionStorage.setItem('scrollPosition', window.scrollY);
+    }
+});
+
+window.addEventListener('load', function() {
+    let savedScroll = sessionStorage.getItem('scrollPosition');
+
+    if (savedScroll) {
+        let checkProjects = setInterval(function() {
+            if (document.querySelector('.card')) {
+                clearInterval(checkProjects);
+
+
+                window.scrollTo({
+                    top: parseInt(savedScroll),
+                    behavior: 'instant'
+                });
+
+                sessionStorage.removeItem('scrollPosition');
+            }
+        }, 50);
+    }
+});
