@@ -760,3 +760,18 @@ h3:first-of-type + .gallery.pixel-grid {
 .about-content li strong {
     color: var(--text-light);
 }
+
+/* --- Stopka (Footer) --- */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.footer-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
