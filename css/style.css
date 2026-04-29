@@ -847,12 +847,12 @@ h3:first-of-type + .gallery.pixel-grid {
 
 .copyright-warning {
     font-size: 0.95rem;
-    color: #ff4a4a;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    border-left: 3px solid #ff4a4a;
-    padding-left: 10px;
-    background-color: rgba(255, 74, 74, 0.1);
-    padding: 10px;
+    color: #ff4a4a !important;
+    margin-top: 10px !important;
+    margin-bottom: 25px !important;
+    border-left: 3px solid #ff4a4a !important;
+    padding-left: 10px !important;
+    background-color: rgba(255, 74, 74, 0.1) !important;
+    padding: 10px !important;
     border-radius: 4px;
 }
