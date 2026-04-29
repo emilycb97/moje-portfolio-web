@@ -57,6 +57,14 @@ a:hover {
     box-shadow: 0 0 15px rgba(0, 255, 102, 0.2);
 }
 
+/* --- Ochrona obrazków --- */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .profile-pic img {
     width: 100%;
     height: 100%;
@@ -193,9 +201,38 @@ main {
     margin: 0 auto;
     padding: 1.5rem 2rem;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-top {
+    display: flex;
     align-items: center;
     gap: 12px;
-    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.footer-warning {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-warning {
+        text-align: center;
+    }
 }
 
 .footer-logo {
@@ -806,4 +843,16 @@ h3:first-of-type + .gallery.pixel-grid {
     color: var(--text-light);
     margin-bottom: 25px;
     line-height: 1.8;
+}
+
+.copyright-warning {
+    font-size: 0.95rem;
+    color: #ff4a4a;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-left: 3px solid #ff4a4a;
+    padding-left: 10px;
+    background-color: rgba(255, 74, 74, 0.1);
+    padding: 10px;
+    border-radius: 4px;
 }

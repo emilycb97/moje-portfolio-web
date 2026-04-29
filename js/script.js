@@ -255,3 +255,42 @@ window.addEventListener('load', function() {
         }, 50);
     }
 });
+
+document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+
+    let isSubpage = document.body.classList.contains('subpage');
+    let imagePath = isSubpage ? '../../assets/favicon.png' : 'assets/favicon.png';
+
+    let footerHTML = `
+        <footer class="main-footer">
+            <div class="footer-line"></div>
+            <div class="footer-content">
+                <!-- Lewa strona: Ostrzeżenie -->
+                <p class="footer-warning">
+                    <span class="pl">Wszelkie prawa zastrzeżone. Bezprawne kopiowanie i używanie projektów zabronione.</span>
+                    <span class="en">All rights reserved. Unauthorized copying and use of projects is prohibited.</span>
+                </p>
+                
+                <!-- Prawa strona: Logo i Imię -->
+                <div class="footer-top">
+                    <img src="${imagePath}" alt="Logo" class="footer-logo">
+                    <p>© 2026 Emilia Szczerba.</p>
+                </div>
+            </div>
+        </footer>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
+});
