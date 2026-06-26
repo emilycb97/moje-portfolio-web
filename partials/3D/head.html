@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ręka - sculpting - Emilia Szczerba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body class="subpage">
+
+<button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+
+<div class="container">
+    <a href="../../index.html?page=projects" class="btn-back">
+        <span class="pl">← Wróć do spisu projektów</span>
+        <span class="en">← Back to projects</span>
+    </a>
+
+    <h1>
+        <span class="pl">Projekt: Wyrzeźbione własne popiersie</span>
+        <span class="en">Project: Sculpted torso</span>
+    </h1>
+
+    <div class="description">
+        <div class="pl">
+            <p>Realistyczny model 3D stanowiący studium anatomii własnego popiersia z dynamiczną miną. Projekt został wyrzeźbiony od podstaw w programie <strong>Blender</strong>, z naciskiem na oddanie naturalnych proporcji. Poniżej znajduje się interaktywny podgląd wyeksportowanego modelu w formacie GLB.</p>
+        </div>
+        <div class="en">
+            <p>A realistic 3D model constituting an anatomy study of my own torso with the dynamic facial expression. The project was sculpted from scratch in <strong>Blender</strong>, with an emphasis on capturing natural proportions. Below is an interactive preview of the exported model in GLB format.</p>
+        </div>
+    </div>
+
+    <div class="reference-image" style="text-align: center; margin: 30px 0;">
+        <p style="margin-bottom: 10px; font-weight: bold;">
+            <span class="pl">Zdjęcie referencyjne:</span>
+            <span class="en">Reference image:</span>
+        </p>
+        <img src="pop.jpg" alt="Popiersie - zdjęcie referencyjne" style="max-height: 400px; border-radius: 8px; border: 1px solid #333;">
+    </div>
+
+    <div id="model-container" class="sketchfab-embed-wrapper" style="position: relative; height: 600px; background: #111; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+        <button class="fullscreen-btn" onclick="toggleFullscreen('model-container')">
+            <span class="pl">⛶ Pełny ekran</span>
+            <span class="en">⛶ Fullscreen</span>
+        </button>
+
+        <model-viewer
+                src="head.glb"
+                alt="Model popiersia"
+                camera-controls
+                auto-rotate
+                shadow-intensity="2"
+                exposure="0.1"
+                style="width: 100%; height: 100%;">
+        </model-viewer>
+    </div>
+</div>
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>
