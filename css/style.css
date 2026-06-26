@@ -855,3 +855,15 @@ h3:first-of-type + .gallery.pixel-grid {
     padding: 10px !important;
     border-radius: 4px;
 }
+
+.card-tags span.en {
+    display: none;
+}
+
+body.lang-en .card-tags span.pl {
+    display: none;
+}
+
+body.lang-en .card-tags span.en {
+    display: inline-flex;
+}
